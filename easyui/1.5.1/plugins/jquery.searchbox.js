@@ -3,7 +3,7 @@ import './jquery.parser.js'
 import './jquery.textbox.js'
 import './jquery.menubutton.js'
 
-import '../themes/default/searchbox.css'
+import 'easyui.css/searchbox.css'
 
 /**
  * jQuery EasyUI 1.5.1

@@ -3,7 +3,7 @@ import './jquery.parser.js'
 import './jquery.validatebox.js'
 import './jquery.linkbutton.js'
 
-import '../themes/default/textbox.css'
+import 'easyui.css/textbox.css'
 
 /**
  * jQuery EasyUI 1.5.1

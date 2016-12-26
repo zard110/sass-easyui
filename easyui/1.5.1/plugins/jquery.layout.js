@@ -3,7 +3,7 @@ import './jquery.parser.js'
 import './jquery.resizable.js'
 import './jquery.panel.js'
 
-import '../themes/default/layout.css'
+import 'easyui.css/layout.css'
 
 /**
  * jQuery EasyUI 1.5.1

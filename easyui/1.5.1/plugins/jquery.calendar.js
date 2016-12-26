@@ -1,7 +1,7 @@
 import jQuery from 'jquery'
 import './jquery.parser.js'
 
-import '../themes/default/calendar.css'
+import 'easyui.css/calendar.css'
 
 /**
  * jQuery EasyUI 1.5.1

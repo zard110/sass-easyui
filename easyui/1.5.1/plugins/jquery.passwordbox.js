@@ -2,7 +2,7 @@ import jQuery from 'jquery'
 import './jquery.parser.js'
 import './jquery.textbox.js'
 
-import '../themes/default/passwordbox.css'
+import 'easyui.css/passwordbox.css'
 
 /**
  * jQuery EasyUI 1.5.1

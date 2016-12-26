@@ -2,7 +2,7 @@ import jQuery from 'jquery'
 import './jquery.parser.js'
 import './jquery.datagrid.js'
 
-import '../themes/default/tree.css'
+import 'easyui.css/tree.css'
 
 /**
  * jQuery EasyUI 1.5.1

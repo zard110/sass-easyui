@@ -2,7 +2,7 @@ import jQuery from 'jquery'
 import './jquery.parser.js'
 import './jquery.menubutton.js'
 
-import '../themes/default/splitbutton.css'
+import 'easyui.css/splitbutton.css'
 
 /**
  * jQuery EasyUI 1.5.1

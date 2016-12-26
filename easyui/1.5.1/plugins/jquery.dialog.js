@@ -3,7 +3,7 @@ import './jquery.parser.js'
 import './jquery.linkbutton.js'
 import './jquery.window.js'
 
-import '../themes/default/dialog.css'
+import 'easyui.css/dialog.css'
 
 /**
  * jQuery EasyUI 1.5.1

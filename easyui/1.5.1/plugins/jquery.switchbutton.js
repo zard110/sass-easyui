@@ -1,7 +1,7 @@
 import jQuery from 'jquery'
 import './jquery.parser.js'
 
-import '../themes/default/switchbutton.css'
+import 'easyui.css/switchbutton.css'
 
 /**
  * jQuery EasyUI 1.5.1

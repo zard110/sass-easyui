@@ -2,7 +2,7 @@ import jQuery from 'jquery'
 import './jquery.parser.js'
 import './jquery.tooltip.js'
 
-import '../themes/default/validatebox.css'
+import 'easyui.css/validatebox.css'
 
 /**
  * jQuery EasyUI 1.5.1

@@ -3,7 +3,7 @@ import './jquery.parser.js'
 import './jquery.draggable.js'
 import './jquery.droppable.js'
 
-import '../themes/default/tree.css'
+import 'easyui.css/tree.css'
 
 /**
  * jQuery EasyUI 1.5.1

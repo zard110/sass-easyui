@@ -4,7 +4,7 @@ import './jquery.resizable.js'
 import './jquery.draggable.js'
 import './jquery.panel.js'
 
-import '../themes/default/window.css'
+import 'easyui.css/window.css'
 
 /**
  * jQuery EasyUI 1.5.1

@@ -3,7 +3,7 @@ import './jquery.parser.js'
 import './jquery.combo.js'
 import './jquery.calendar.js'
 
-import '../themes/default/datebox.css'
+import 'easyui.css/datebox.css'
 
 /**
  * jQuery EasyUI 1.5.1

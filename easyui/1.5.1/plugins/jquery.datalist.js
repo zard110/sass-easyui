@@ -2,7 +2,7 @@ import jQuery from 'jquery'
 import './jquery.parser.js'
 import './jquery.datagrid.js'
 
-import '../themes/default/datalist.css'
+import 'easyui.css/datalist.css'
 
 /**
  * jQuery EasyUI 1.5.1

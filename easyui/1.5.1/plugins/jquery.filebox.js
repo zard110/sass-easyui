@@ -2,7 +2,7 @@ import jQuery from 'jquery'
 import './jquery.parser.js'
 import './jquery.textbox.js'
 
-import '../themes/default/filebox.css'
+import 'easyui.css/filebox.css'
 
 /**
  * jQuery EasyUI 1.5.1

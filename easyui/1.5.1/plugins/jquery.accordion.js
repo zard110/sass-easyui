@@ -2,7 +2,7 @@ import jQuery from 'jquery'
 import './jquery.parser.js'
 import './jquery.panel.js'
 
-import '../themes/default/accordion.css'
+import 'easyui.css/accordion.css'
 
 /**
  * jQuery EasyUI 1.5.1

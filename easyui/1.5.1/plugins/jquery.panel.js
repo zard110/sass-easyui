@@ -1,7 +1,7 @@
 import jQuery from 'jquery'
 import './jquery.parser.js'
 
-import '../themes/default/panel.css'
+import 'easyui.css/panel.css'
 
 /**
  * jQuery EasyUI 1.5.1

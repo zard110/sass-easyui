@@ -1,11 +1,6 @@
-const webpack = require('webpack');
 const path = require('path');
 
 const config = {
-
-};
-
-module.exports = {
   devtool: "source-map",
 
   entry: './main.js',
@@ -33,5 +28,16 @@ module.exports = {
         }
       }
     ]
+  },
+
+  resolve: {
+    alias: {
+      'easyui.plugins': path.resolve(__dirname, './easyui/1.5.1/plugins'),
+      'easyui.css': path.resolve(__dirname, './easyui/1.5.1/themes/default'),
+      'easyui.icon': path.resolve(__dirname, './easyui/1.5.1/themes/icon.css'),
+      'easyui.locale': path.resolve(__dirname, './easyui/1.5.1/locale')
+    }
   }
 };
+
+module.exports = config;

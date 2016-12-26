@@ -1,7 +1,7 @@
 import jQuery from 'jquery'
 import './jquery.parser.js'
 
-import '../themes/default/menu.css'
+import 'easyui.css/menu.css'
 
 /**
  * jQuery EasyUI 1.5.1

@@ -3,7 +3,7 @@ import './jquery.parser.js'
 import './jquery.linkbutton.js'
 import './jquery.menu.js'
 
-import '../themes/default/menubutton.css'
+import 'easyui.css/menubutton.css'
 
 /**
  * jQuery EasyUI 1.5.1

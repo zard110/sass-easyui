@@ -1,7 +1,7 @@
 import jQuery from 'jquery'
 import './jquery.parser.js'
 
-import '../themes/default/progressbar.css'
+import 'easyui.css/progressbar.css'
 
 /**
  * jQuery EasyUI 1.5.1

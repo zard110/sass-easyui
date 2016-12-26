@@ -1,7 +1,7 @@
 import jQuery from 'jquery'
 import './jquery.parser.js'
 
-import '../themes/default/tooltip.css'
+import 'easyui.css/tooltip.css'
 
 /**
  * jQuery EasyUI 1.5.1

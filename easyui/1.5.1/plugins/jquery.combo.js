@@ -3,7 +3,7 @@ import './jquery.parser.js'
 import './jquery.panel.js'
 import './jquery.textbox.js'
 
-import '../themes/default/combo.css'
+import 'easyui.css/combo.css'
 
 /**
  * jQuery EasyUI 1.5.1

@@ -1,7 +1,7 @@
 import jQuery from 'jquery'
 import './jquery.parser.js'
 
-import '../themes/default/pagination.css'
+import 'easyui.css/pagination.css'
 
 /**
  * jQuery EasyUI 1.5.1

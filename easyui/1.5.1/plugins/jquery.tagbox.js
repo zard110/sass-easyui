@@ -2,7 +2,7 @@ import jQuery from 'jquery'
 import './jquery.parser.js'
 import './jquery.combobox.js'
 
-import '../themes/default/tagbox.css'
+import 'easyui.css/tagbox.css'
 
 /**
  * jQuery EasyUI 1.5.1

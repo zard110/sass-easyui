@@ -1,7 +1,7 @@
 import jQuery from 'jquery'
 import './jquery.parser.js'
 
-import '../themes/default/linkbutton.css'
+import 'easyui.css/linkbutton.css'
 
 /**
  * jQuery EasyUI 1.5.1

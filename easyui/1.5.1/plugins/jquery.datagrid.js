@@ -5,7 +5,7 @@ import './jquery.resizable.js'
 import './jquery.linkbutton.js'
 import './jquery.pagination.js'
 
-import '../themes/default/datagrid.css'
+import 'easyui.css/datagrid.css'
 
 /**
  * jQuery EasyUI 1.5.1

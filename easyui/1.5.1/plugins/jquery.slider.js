@@ -2,7 +2,7 @@ import jQuery from 'jquery'
 import './jquery.parser.js'
 import './jquery.draggable.js'
 
-import '../themes/default/slider.css'
+import 'easyui.css/slider.css'
 
 /**
  * jQuery EasyUI 1.5.1

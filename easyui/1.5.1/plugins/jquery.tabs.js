@@ -3,7 +3,7 @@ import './jquery.parser.js'
 import './jquery.linkbutton.js'
 import './jquery.panel.js'
 
-import '../themes/default/tabs.css'
+import 'easyui.css/tabs.css'
 
 /**
  * jQuery EasyUI 1.5.1

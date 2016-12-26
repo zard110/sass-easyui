@@ -46,5 +46,5 @@ import 'easyui.plugins/jquery.datebox'
 import 'easyui.plugins/jquery.datetimebox'
 import 'easyui.plugins/jquery.slider'
 
-import translate from 'easyui.locale/easyui-lang-zh_CN'
+import translate from 'easyui.locale'
 translate();

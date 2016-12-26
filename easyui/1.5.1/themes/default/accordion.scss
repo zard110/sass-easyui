@@ -1,0 +1,46 @@
+@import 'base.scss';
+
+/* 手风琴 */
+.accordion {
+  overflow: hidden;
+  background: $body-background-color;
+  border: $border;
+
+  /* HEADER */
+  .accordion-header {
+    border-width: 0 0 1px;
+    background: $header-background-color;
+    filter: none;
+    cursor: pointer;
+
+    .accordion-collapse {
+      background: url('images/accordion_arrows.png') no-repeat 0 0;
+    }
+
+    .accordion-expand {
+      background: url('images/accordion_arrows.png') no-repeat -16px 0;
+    }
+  }
+
+  /* 选中的 HEADER */
+  .accordion-header-selected {
+    background: $selected-background-color;
+
+    .panel-title {
+      color: $selected-text-color;
+    }
+  }
+
+  /* BODY */
+  .accordion-body {
+    border-width: 0 0 1px;
+  }
+}
+
+/* 没有边框的手风琴 */
+.accordion-noborder {
+  border-width: 0;
+}
+
+
+

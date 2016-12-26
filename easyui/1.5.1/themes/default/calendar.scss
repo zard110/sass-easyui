@@ -1,0 +1,214 @@
+@import 'base.scss';
+
+@mixin header-operator() {
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  font-size: 1px;
+  @include border-radius();
+}
+
+@mixin opacity($opacity: .6) {
+  opacity: $opacity;
+  filter: alpha(opacity=$opacity*100);
+}
+
+$font: 12px;
+$font-color: #4d4d4d;
+$color: #ffffff;
+$day-color: #000000;
+$sunday-color: #CC2222;
+$saturday-color: #00ee00;
+$today-color: #0000ff;
+$header-color: #E0ECFF;
+$border: 1px solid #95B8E7;
+
+.calendar {
+  border: $border;
+  padding: 1px;
+  overflow: hidden;
+
+  table {
+    table-layout: fixed;
+    border-collapse: separate;
+    font-size: $font;
+    width: 100%;
+    height: 100%;
+
+    th, td {
+      font-size: $font;
+    }
+  }
+
+  .calendar-header {
+    position: relative;
+    height: 22px;
+
+    .calendar-title {
+      text-align: center;
+      height: 22px;
+
+      span {
+        position: relative;
+        display: inline-block;
+        top: 2px;
+        padding: 0 3px;
+        height: 18px;
+        line-height: 18px;
+        font-size: $font;
+        cursor: pointer;
+        @include border-radius();
+      }
+    }
+
+    .calendar-nextyear {
+      @include header-operator();
+      right: 3px;
+      background: url('images/calendar_arrows.png') no-repeat -49px -2px;
+    }
+
+    .calendar-prevmonth {
+      @include header-operator();
+      left: 20px;
+      background: url('images/calendar_arrows.png') no-repeat -18px -2px;
+    }
+
+    .calendar-nextmonth {
+      @include header-operator();
+      right: 20px;
+      background: url('images/calendar_arrows.png') no-repeat -34px -2px;
+    }
+
+    .calendar-prevyear {
+      @include header-operator();
+      left: 3px;
+      background: url('images/calendar_arrows.png') no-repeat -1px -2px;
+    }
+  }
+
+  .calendar-body {
+    background: $color;
+    position: relative;
+
+    th, td {
+      text-align: center;
+    }
+    th {
+      padding: 2px 0;
+      color: $font-color;
+    }
+
+    .calendar-day {
+      color: $day-color;
+      border: 0;
+      padding: 1px;
+      cursor: pointer;
+      @include border-radius();
+    }
+
+    .calendar-other-month {
+      @include opacity(.3);
+    }
+
+    .calendar-disabled {
+      @include opacity(.6);
+      cursor: default;
+    }
+
+    .calendar-menu {
+      background: $color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 180px;
+      height: 150px;
+      padding: 5px;
+      font-size: $font;
+      display: none;
+      overflow: hidden;
+
+      .calendar-menu-year-inner {
+        text-align: center;
+        padding-bottom: 5px;
+      }
+
+      .calendar-menu-year {
+        width: 50px;
+        text-align: center;
+        border: $border;
+        outline-style: none;
+        resize: none;
+        margin: 0;
+        padding: 2px;
+        font-weight: bold;
+        font-size: $font;
+        @include border-radius();
+      }
+
+      .calendar-menu-prev,
+      .calendar-menu-next {
+        display: inline-block;
+        width: 21px;
+        height: 21px;
+        vertical-align: top;
+        cursor: pointer;
+        @include border-radius();
+      }
+      .calendar-menu-prev {
+        margin-right: 10px;
+        background: url('images/calendar_arrows.png') no-repeat 2px 2px;
+      }
+      .calendar-menu-next {
+        margin-left: 10px;
+        background: url('images/calendar_arrows.png') no-repeat -45px 2px;
+      }
+      .calendar-menu-month {
+        color: $font-color;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        @include border-radius();
+      }
+    }
+
+    .calendar-sunday {
+      color: $sunday-color;
+    }
+    .calendar-saturday {
+      color: $saturday-color;
+    }
+    .calendar-today {
+      color: $today-color;
+    }
+    .calendar-header {
+      background: $header-color;
+    }
+    .calendar-body th {
+      background: #F4F4F4;
+
+    }
+    .calendar-hover,
+    .calendar-nav-hover,
+    .calendar-menu-hover {
+      background-color: #eaf2ff;
+      color: #000000;
+    }
+    .calendar-hover {
+      border: 1px solid #b7d2ff;
+      padding: 0;
+    }
+    .calendar-selected {
+      background-color: #ffe48d;
+      color: #000000;
+      border: 1px solid #ffab3f;
+      padding: 0;
+    }
+  }
+}
+
+.calendar-noborder {
+  border: 0;
+}

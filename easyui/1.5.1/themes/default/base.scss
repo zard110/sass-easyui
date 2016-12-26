@@ -1,0 +1,81 @@
+
+/* Common */
+$border-color: #95B8E7;
+$border: 1px solid $border-color;
+$font-size: 12px;
+$shadow-background-color: #CCC;
+$mask-background-color: #CCC;
+$toolbar-background-color: #F4F4F4;
+$toolbar-border-color: #DDD;
+$split-color: #E6EEF8;
+$split-proxy-color: #AAC5E7;
+
+/* Header */
+$header-background-color: #E0ECFF;
+$header-text-color: #0E2D5F;
+$header-gradient-used: true;
+$header-gradient-from: #EFF5FF;
+$header-gradient-to: #E0ECFF;
+
+/* Body */
+$body-background-color: #FFF;
+$body-text-color: #000;
+
+/* Grid */
+$grid-header-background-color: #EFEFEF;
+$grid-header-gradient-from: #F9F9F9;
+$grid-header-gradient-to: #EFEFEF;
+$cell-border-color: #CCC;
+$alt-background-color: #FAFAFA;
+
+/* State */
+$selected-background-color: #FFE48D;
+$selected-text-color: #000;
+$selected-border-color: #FFAB3F;
+$hover-background-color: #EAF2FF ;
+$hover-text-color: #000;
+$hover-border-color: #B7D2FF;
+$invalid-background-color: #FFF3F3 ;
+$invalid-text-color: #FFA8A8;
+$invalid-border-color: #000;
+
+/* Menu */
+$menu-background-color: #FAFAFA;
+$menu-text-color: #444;
+$menu-border-color: #DDD;
+
+/* Button */
+$button-background-color: #FAFAFA;
+$button-selected-color: #DDD;
+$button-text-color: #444;
+$button-border-color: #BBB;
+$button-gradient-used: true;
+$button-gradient-from: #FFF;
+$button-gradient-to: #EEE;
+$button-radius: 5px;
+$button-split-color1: #CCC;
+$button-split-color2: #FFF;
+
+@mixin border-radius($amount: $button-radius) {
+  -moz-border-radius: $amount;
+  -webkit-border-radius: $amount;
+  border-radius: $amount;
+}
+
+@mixin linear-gradient($from: $header-gradient-from, $to: $header-gradient-to) {
+  background-color: $to;
+  background: -webkit-linear-gradient(top,$from 0,$to 100%);
+  background: -moz-linear-gradient(top,$from 0,$to 100%);
+  background: -o-linear-gradient(top,$from 0,$to 100%);
+  background: linear-gradient(to bottom,$from 0,$to 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$from,endColorstr=$to,GradientType=0);
+}
+
+@mixin vertical-middle($height: 16) {
+  position: absolute;
+  top: 50%;
+  margin-top: (-1 * $height / 2) + px;
+  height: $height + px;
+  overflow: hidden;
+}

@@ -1,0 +1,134 @@
+
+/* Common */
+$border-color: #95B8E7;
+$border: 1px solid $border-color;
+$font-size: 12px;
+$shadow-background-color: #CCC;
+$mask-background-color: #CCC;
+$toolbar-background-color: #F4F4F4;
+$toolbar-border-color: #DDD;
+$split-color: #E6EEF8;
+$split-proxy-color: #AAC5E7;
+
+/* Header */
+$header-background-color: #E0ECFF;
+$header-text-color: #0E2D5F;
+$header-gradient-used: true;
+$header-gradient-from: #EFF5FF;
+$header-gradient-to: #E0ECFF;
+
+/* Body */
+$body-background-color: #FFF;
+$body-text-color: #000;
+
+/* Grid */
+$grid-header-background-color: #EFEFEF;
+$grid-header-gradient-from: #F9F9F9;
+$grid-header-gradient-to: #EFEFEF;
+$cell-border-color: #CCC;
+$alt-background-color: #FAFAFA;
+
+/* State */
+$selected-background-color: #FFE48D;
+$selected-text-color: #000;
+$selected-border-color: #FFAB3F;
+$hover-background-color: #EAF2FF ;
+$hover-text-color: #000;
+$hover-border-color: #B7D2FF;
+$invalid-background-color: #FFF3F3 ;
+$invalid-text-color: #FFA8A8;
+$invalid-border-color: #000;
+
+/* Menu */
+$menu-background-color: #FAFAFA;
+$menu-text-color: #444;
+$menu-border-color: #DDD;
+
+/* Button */
+$button-background-color: #FFF;
+$button-selected-color: #DDD;
+$button-text-color: #333;
+$button-border-color: #CCC;
+
+$button-gradient-used: false;
+$button-gradient-from: #FFF;
+$button-gradient-to: #FFF;
+
+$button-radius: 0;
+$button-split-color1: #CCC;
+$button-split-color2: #FFF;
+
+/* Button:hover */
+$button-hover-background-color: #E6E6E6;
+$button-hover-text-color: #333;
+$button-hover-border-color: #ADADAD;
+
+/* 圆角 */
+@mixin border-radius($amount: $button-radius) {
+  -moz-border-radius: $amount;
+  -webkit-border-radius: $amount;
+  border-radius: $amount;
+}
+
+/* 渐变色 */
+@mixin linear-gradient(
+  $used: true,
+  $from: #FFF,
+  $to: #EEE
+) {
+  background-repeat: repeat-x;
+  @if $used {
+    background-color: $to;
+    background: -webkit-linear-gradient(top,$from 0,$to 100%);
+    background: -moz-linear-gradient(top,$from 0,$to 100%);
+    background: -o-linear-gradient(top,$from 0,$to 100%);
+    background: linear-gradient(to bottom,$from 0,$to 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$from,endColorstr=$to,GradientType=0);
+  }
+  @else {
+    background-color: $to;
+    background: -webkit-linear-gradient(top,$to 0,$to 100%);
+    background: -moz-linear-gradient(top,$to 0,$to 100%);
+    background: -o-linear-gradient(top,$to 0,$to 100%);
+    background: linear-gradient(to bottom,$to 0,$to 100%);
+    filter: none;
+  }
+}
+@mixin header-linear-gradient(
+  $used: $header-gradient-used,
+  $from: $header-gradient-from,
+  $to: $header-gradient-to
+) {
+  @include linear-gradient($used, $from, $to);
+}
+
+/* 按钮渐变色 */
+@mixin button-linear-gradient(
+  $used: $button-gradient-used,
+  $from: $button-gradient-from,
+  $to: $button-gradient-to
+) {
+  @include linear-gradient($used, $from, $to);
+}
+
+/* 垂直居中 */
+@mixin vertical-middle($height: 16) {
+  position: absolute;
+  top: 50%;
+  margin-top: (-1 * $height / 2) + px;
+  height: $height + px;
+  overflow: hidden;
+}
+
+/* 按钮选中时效果 */
+@mixin inset-shadow() {
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+/* 按钮聚焦时效果 */
+@mixin focus-outline() {
+  outline:thin dotted;
+  outline:5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}

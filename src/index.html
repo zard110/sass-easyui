@@ -130,7 +130,7 @@
       </div>
     </div>
   </div>
-  <div region="south" border="false" style="height:230px;padding-top:5px">
+  <div region="south" border="false" style="height:330px;padding-top:5px">
     <div class="easyui-layout" fit="true" style="height:210px;margin-top1:10px">
       <div region="west" split1="true" border="false" style="width:205px;">
         <div class="easyui-calendar" fit="true"></div>
@@ -150,7 +150,7 @@
       <div region="center" border="false" style="padding:0 5px">
         <div class="easyui-panel" fit="true" style="padding:10px;">
           <div style="font-weight:bold;font-size:16px;margin-bottom:10px">Form Fields</div>
-          <table>
+          <table style="display: none;">
             <tr>
               <td>ValidateBox:</td>
               <td>
@@ -177,30 +177,53 @@
             </tr>
           </table>
           <div style="margin:10px 0;">
-            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-add'">Add</a>
-            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-remove'">Remove</a>
-            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-save',toggle:true">Save</a>
-            <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cut',disabled:true">Cut</a>
-            <a href="#" class="easyui-linkbutton">Text Button</a>
+            <button class="easyui-linkbutton" data-options="iconCls:'icon-add'">Button</button>
+            <button class="easyui-linkbutton" data-options="iconCls:'icon-add', selected: true, toggle: true">Selected</button>
+            <button class="easyui-linkbutton" data-options="iconCls:'icon-add', disabled: true">Disabled</button>
+            <button class="easyui-linkbutton" data-options="iconCls:'icon-add'"></button>
+            <button class="easyui-linkbutton" data-options="iconCls:'icon-add', iconAlign:'top'">Button</button>
+            <button class="easyui-linkbutton" data-options="iconCls:'icon-add', iconAlign:'right'">Button</button>
+            <button class="easyui-linkbutton" data-options="iconCls:'icon-add', iconAlign:'bottom'">Button</button>
+            <button class="easyui-linkbutton">No Icon</button>
+            <button class="easyui-linkbutton" data-options="iconCls:'icon-add', plain: true">Button</button>
+            <button class="easyui-linkbutton" data-options="iconCls:'icon-add', disabled: true">Button</button>
+
+            <hr>
+
+            <button class="easyui-linkbutton" data-options="size:'large', iconCls:'icon-large-picture'">Button</button>
+            <button class="easyui-linkbutton" data-options="size:'large', iconCls:'icon-large-picture', selected: true, toggle: true">Selected</button>
+            <button class="easyui-linkbutton" data-options="size:'large', iconCls:'icon-large-picture', disabled: true">Disabled</button>
+            <button class="easyui-linkbutton" data-options="size:'large', iconCls:'icon-large-picture'"></button>
+            <button class="easyui-linkbutton" data-options="size:'large', iconCls:'icon-large-picture', iconAlign:'top'">Button</button>
+            <button class="easyui-linkbutton" data-options="size:'large', iconCls:'icon-large-picture', iconAlign:'right'">Button</button>
+            <button class="easyui-linkbutton" data-options="size:'large', iconCls:'icon-large-picture', iconAlign:'bottom'">Button</button>
+            <button class="easyui-linkbutton" data-options="size:'large'">No Icon</button>
+            <button class="easyui-linkbutton" data-options="size:'large', iconCls:'icon-large-picture', plain: true">Button</button>
+            <button class="easyui-linkbutton" data-options="size:'large', iconCls:'icon-large-picture', disabled: true">Button</button>
+
+            <hr>
+
+
+
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="easyui-dialog" title="Dialog" iconCls="icon-save" style="width:300px;height:150px;padding:10px"
-     data-options="
-			resizable:true,
-			buttons:[{
-				text:'Ok',
-				iconCls:'icon-ok'
-			},{
-				text:'Cancel',
-				iconCls:'icon-cancel'
-			}]
-		">
-  <p>Dialog Content.</p>
-</div>
+<!--<div class="easyui-dialog" title="Dialog" iconCls="icon-save" style="width:300px;height:150px;padding:10px"-->
+     <!--data-options="-->
+			<!--resizable:true,-->
+			<!--buttons:[{-->
+				<!--text:'Ok',-->
+				<!--iconCls:'icon-ok'-->
+			<!--},{-->
+				<!--text:'Cancel',-->
+				<!--iconCls:'icon-cancel'-->
+			<!--}]-->
+		<!--">-->
+  <!--<p>Dialog Content.</p>-->
+<!--</div>-->
 
 <script src="dist/manifest.js"></script>
 <script src="dist/vendor.js"></script>

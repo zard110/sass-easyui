@@ -1,0 +1,69 @@
+@import 'base.scss';
+
+/**** 按钮 ****/
+.l-btn {
+  padding: 6px 12px;
+  border-radius: $button-radius;
+  border-color: $button-border-color;
+  @include button-linear-gradient();
+
+  .l-btn-icon {
+    font-size: 16px;
+  }
+
+  .l-btn-text {
+    height: 20px;
+    line-height: 20px;
+    font-size: $font-size;
+    color: $button-text-color;
+  }
+}
+
+.l-btn:hover,
+.l-btn-hover,
+.l-btn-selected {
+  padding: 6px 12px;
+  border-radius: $button-radius;
+  border-color: $button-hover-border-color;
+  @include button-linear-gradient($button-gradient-used, $button-hover-background-color, $button-hover-background-color);
+
+  .l-btn-text {
+    color: $button-hover-text-color;
+  }
+}
+
+.l-btn:focus,
+.l-btn-focus {
+  @include focus-outline();
+}
+
+.l-btn:active,
+.l-btn-selected {
+  outline: 0;
+  @include inset-shadow();
+}
+
+/**** 大按钮 ****/
+.l-btn-large {
+  padding: 6px 16px;
+
+  .l-btn-icon {
+    font-size: 32px;
+  }
+
+  .l-btn-text {
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+  }
+}
+
+.l-btn-large:hover,
+.l-btn-large.l-btn-hover {
+  padding: 6px 16px;
+}
+
+/**** 扁平 ****/
+.l-btn-plain {
+  border: 1px solid transparent;
+}

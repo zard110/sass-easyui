@@ -8,7 +8,10 @@ const config = {
 
   entry: {
     main: './main.js',
-    vendor: 'jquery'
+    jquery: 'jquery',
+    angular: 'angular',
+    'angular-resource': 'angular-resource',
+    'angular-ui-router': 'angular-ui-router'
   },
 
   output: {
@@ -52,7 +55,7 @@ const config = {
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['vendor', 'manifest']
+      name: ['angular-resource', 'angular-ui-router', 'angular', 'jquery', 'manifest']
     })
   ]
 };

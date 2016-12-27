@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SASS EasyUI</title>
+</head>
+<body ng-app="sass-easyui">
+<div class="easyui-layout" fit="true">
+  <div region="west" title="Sass & EasyUI" collapsible="false" style="width:220px">
+    <div class="easyui-accordion" border="false" fit="true">
+      <div title="Button" style="padding:10px">
+        <p>Accordion content1.</p>
+      </div>
+      <div title="Grid" style="padding:10px">
+        <p>Accordion content2.</p>
+      </div>
+    </div>
+  </div>
+  <div region="center">
+    <div ui-view style="padding: 10px 20px;"></div>
+  </div>
+</div>
+
+<script src="dist/manifest.js"></script>
+<script src="dist/angular.js"></script>
+<script src="dist/angular-resource.js"></script>
+<script src="dist/angular-ui-router.js"></script>
+<script src="dist/jquery.js"></script>
+<script src="dist/main.js"></script>
+</body>
+</html>

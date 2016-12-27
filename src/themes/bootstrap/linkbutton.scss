@@ -3,12 +3,17 @@
 /**** 按钮 ****/
 .l-btn {
   padding: 6px 12px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
   border-radius: $button-radius;
   border-color: $button-border-color;
   @include button-linear-gradient();
+  @include none-user-select();
 
   .l-btn-icon {
     font-size: 16px;
+    color: $button-text-color;
   }
 
   .l-btn-text {
@@ -43,6 +48,19 @@
   @include inset-shadow();
 }
 
+.l-btn-disabled,
+.l-btn-disabled:hover {
+  opacity: 0.65;
+}
+.l-btn-disabled .l-btn-text,
+.l-btn-disabled .l-btn-icon {
+  filter: alpha(opacity=65);
+}
+.l-btn-plain-disabled,
+.l-btn-plain-disabled:hover {
+  filter: alpha(opacity=65);
+}
+
 /**** 大按钮 ****/
 .l-btn-large {
   padding: 6px 16px;
@@ -63,7 +81,243 @@
   padding: 6px 16px;
 }
 
+/**** 小按钮 ****/
+.l-btn-small {
+  padding: 2px 4px;
+
+  .l-btn-text {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
+
+.l-btn-small:hover,
+.l-btn-small.l-btn-hover {
+  padding: 2px 4px;
+}
+
 /**** 扁平 ****/
 .l-btn-plain {
   border: 1px solid transparent;
 }
+
+/**** Primary Button ****/
+.btn-primary {
+  border-color: $button-primary-border-color;
+  @include button-linear-gradient($button-gradient-used, $button-primary-background-color, $button-primary-background-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-primary-text-color;
+  }
+}
+
+.btn-primary:hover,
+.btn-primary.l-btn-hover,
+.btn-primary.l-btn-selected {
+  border-color: $button-primary-selected-color;
+  @include button-linear-gradient($button-gradient-used, $button-primary-selected-color, $button-primary-selected-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-primary-text-color;
+  }
+}
+
+/**** Success Button ****/
+.btn-success {
+  border-color: $button-success-border-color;
+  @include button-linear-gradient($button-gradient-used, $button-success-background-color, $button-success-background-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-success-text-color;
+  }
+}
+
+.btn-success:hover,
+.btn-success.l-btn-hover,
+.btn-success.l-btn-selected {
+  border-color: $button-success-selected-color;
+  @include button-linear-gradient($button-gradient-used, $button-success-selected-color, $button-success-selected-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-success-text-color;
+  }
+}
+
+/**** Success Info ****/
+.btn-info {
+  border-color: $button-info-border-color;
+  @include button-linear-gradient($button-gradient-used, $button-info-background-color, $button-info-background-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-info-text-color;
+  }
+}
+
+.btn-info:hover,
+.btn-info.l-btn-hover,
+.btn-info.l-btn-selected {
+  border-color: $button-info-selected-color;
+  @include button-linear-gradient($button-gradient-used, $button-info-selected-color, $button-info-selected-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-info-text-color;
+  }
+}
+
+/**** Success Warning ****/
+.btn-warning {
+  border-color: $button-warning-border-color;
+  @include button-linear-gradient($button-gradient-used, $button-warning-background-color, $button-warning-background-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-warning-text-color;
+  }
+}
+
+.btn-warning:hover,
+.btn-warning.l-btn-hover,
+.btn-warning.l-btn-selected {
+  border-color: $button-warning-selected-color;
+  @include button-linear-gradient($button-gradient-used, $button-warning-selected-color, $button-warning-selected-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-warning-text-color;
+  }
+}
+
+/**** Success Danger ****/
+.btn-danger {
+  border-color: $button-danger-border-color;
+  @include button-linear-gradient($button-gradient-used, $button-danger-background-color, $button-danger-background-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-danger-text-color;
+  }
+}
+
+.btn-danger:hover,
+.btn-danger.l-btn-hover,
+.btn-danger.l-btn-selected {
+  border-color: $button-danger-selected-color;
+  @include button-linear-gradient($button-gradient-used, $button-danger-selected-color, $button-danger-selected-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-danger-text-color;
+  }
+}
+
+/**** Success Link ****/
+.btn-link {
+  border-color: $button-link-border-color;
+  @include button-linear-gradient($button-gradient-used, $button-link-background-color, $button-link-background-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-link-text-color;
+  }
+}
+
+.btn-link:hover,
+.btn-link.l-btn-hover,
+.btn-link.l-btn-selected {
+  border-color: $button-link-selected-color;
+  @include button-linear-gradient($button-gradient-used, $button-link-selected-color, $button-link-selected-color);
+
+  .l-btn-icon,
+  .l-btn-text {
+    color: $button-link-text-color;
+  }
+
+  .l-btn-text {
+    text-decoration: underline;
+  }
+}
+
+/**** 按钮组 ****/
+.btn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  .l-btn {
+    position: relative;
+    float: left;
+  }
+
+  /* 处理间距 */
+  .l-btn+.l-btn, .l-btn+.btn-group, .btn-group+.l-btn, .btn-group+.btn-group {
+    margin-left: -1px;
+  }
+
+  >.btn:first-child {
+    margin-left: 0;
+  }
+
+  /* 处理圆角 */
+  >.l-btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  >.l-btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    @include border-radius(0);
+  }
+  >.l-btn:not(:first-child):last-child:not(.dropdown-toggle) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+
+  .l-btn {
+    position: relative;
+    float: none;
+  }
+
+  /* 处理间距 */
+  >.l-btn+.l-btn, >.l-btn+.btn-group, >.btn-group+.l-btn, >.btn-group+.btn-group {
+    margin-top: -1px;
+    margin-left: 0;
+  }
+
+  >.l-btn, >.btn-group, >.btn-group>.l-btn {
+    display: block;
+    float: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* 处理圆角 */
+  >.l-btn:first-child:not(:last-child) {
+    @include border-radius($button-radius);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  >.l-btn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+
+  >.l-btn:not(:first-child):last-child {
+    @include border-radius($button-radius);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+
+
+

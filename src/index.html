@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="easyui-layout" fit="true">
-  <div region="north" style="height:32px;">
+  <div region="north" style="height:40px;">
     <div style="float:right;margin:4px 5px 0 0">
       <input class="easyui-searchbox" prompt="Please input value" style="width:300px">
     </div>
@@ -46,7 +46,7 @@
       <div>About</div>
     </div>
   </div>
-  <div region="west" title="West" split="true" style="width:210px">
+  <div region="west" title="West" split="true" style="width:310px">
     <div class="easyui-accordion" border="false" fit="true">
       <div title="Title1" style="padding:10px">
         <p>Accordion content1.</p>
@@ -132,7 +132,7 @@
   </div>
   <div region="south" border="false" style="height:330px;padding-top:5px">
     <div class="easyui-layout" fit="true" style="height:210px;margin-top1:10px">
-      <div region="west" split1="true" border="false" style="width:205px;">
+      <div region="west" split1="true" border="false" style="width:330px;">
         <div class="easyui-calendar" fit="true"></div>
       </div>
       <div region="east" style="width:300px;padding:10px;position:relative">
@@ -177,7 +177,7 @@
             </tr>
           </table>
           <div style="margin:10px 0;">
-            <button class="easyui-linkbutton" data-options="iconCls:'icon-add'">Button</button>
+            <a class="easyui-linkbutton" data-options="iconCls:'icon-add'">Button</a>
             <button class="easyui-linkbutton" data-options="iconCls:'icon-add', selected: true, toggle: true">Selected</button>
             <button class="easyui-linkbutton" data-options="iconCls:'icon-add', disabled: true">Disabled</button>
             <button class="easyui-linkbutton" data-options="iconCls:'icon-add'"></button>
@@ -203,7 +203,76 @@
 
             <hr>
 
+            <button class="easyui-linkbutton" data-options="size: 'small', iconCls:'icon-add'">Button</button>
+            <button class="easyui-linkbutton" data-options="size: 'small', iconCls:'icon-add', selected: true, toggle: true">Selected</button>
+            <button class="easyui-linkbutton" data-options="size: 'small', iconCls:'icon-add', disabled: true">Disabled</button>
+            <button class="easyui-linkbutton" data-options="size: 'small', iconCls:'icon-add'"></button>
+            <button class="easyui-linkbutton" data-options="size: 'small', iconCls:'icon-add', iconAlign:'top'">Button</button>
+            <button class="easyui-linkbutton" data-options="size: 'small', iconCls:'icon-add', iconAlign:'right'">Button</button>
+            <button class="easyui-linkbutton" data-options="size: 'small', iconCls:'icon-add', iconAlign:'bottom'">Button</button>
+            <button class="easyui-linkbutton" data-options="size:'small'">No Icon</button>
+            <button class="easyui-linkbutton" data-options="size: 'small', iconCls:'icon-add', plain: true">Button</button>
+            <button class="easyui-linkbutton" data-options="size: 'small', iconCls:'icon-add', disabled: true">Button</button>
 
+            <hr>
+
+            <button class="easyui-linkbutton btn-primary" data-options="toggle: true">Primary</button>
+            <button class="easyui-linkbutton btn-primary" data-options="disabled: true">Primary</button>
+
+            <button class="easyui-linkbutton btn-success" data-options="toggle: true">Success</button>
+            <button class="easyui-linkbutton btn-success" data-options="disabled: true">Success</button>
+
+            <button class="easyui-linkbutton btn-info" data-options="toggle: true">Info</button>
+            <button class="easyui-linkbutton btn-info" data-options="disabled: true">Info</button>
+
+            <button class="easyui-linkbutton btn-warning" data-options="toggle: true">Warning</button>
+            <button class="easyui-linkbutton btn-warning" data-options="disabled: true">Warning</button>
+
+            <button class="easyui-linkbutton btn-danger" data-options="toggle: true">Danger</button>
+            <button class="easyui-linkbutton btn-danger" data-options="disabled: true">Danger</button>
+
+            <button class="easyui-linkbutton btn-link" data-options="toggle: true">Link</button>
+            <button class="easyui-linkbutton btn-link" data-options="disabled: true">Link</button>
+
+            <hr>
+
+            <div class="btn-group">
+              <a class="easyui-linkbutton" data-options="group: 'g1', toggle: true">Left</a>
+              <a class="easyui-linkbutton" data-options="group: 'g1', toggle: true">Middle</a>
+              <a class="easyui-linkbutton" data-options="group: 'g1', toggle: true">Right</a>
+            </div>
+
+            <div class="btn-group">
+              <a class="easyui-linkbutton" data-options="toggle: true">1</a>
+              <a class="easyui-linkbutton" data-options="toggle: true">2</a>
+              <a class="easyui-linkbutton" data-options="toggle: true">3</a>
+              <a class="easyui-linkbutton" data-options="toggle: true">4</a>
+              <a class="easyui-linkbutton" data-options="toggle: true">5</a>
+            </div>
+
+            <div class="btn-group-vertical">
+              <a class="easyui-linkbutton" data-options="group: 'g1', toggle: true">Top</a>
+              <a class="easyui-linkbutton" data-options="group: 'g1', toggle: true">Middle</a>
+              <a class="easyui-linkbutton" data-options="group: 'g1', toggle: true">Bottom</a>
+            </div>
+
+            <hr>
+
+            <a class="easyui-splitbutton" data-options="menu:'#mm2'">Default</a>
+            <a class="easyui-splitbutton btn-primary" data-options="menu:'#mm2'">Primary</a>
+            <a class="easyui-splitbutton btn-success" data-options="menu:'#mm2'">Success</a>
+            <a class="easyui-splitbutton btn-info" data-options="menu:'#mm2'">Info</a>
+            <a class="easyui-splitbutton btn-warning" data-options="menu:'#mm2'">Warning</a>
+            <a class="easyui-splitbutton btn-danger" data-options="menu:'#mm2'">Danger</a>
+
+            <hr>
+
+            <a class="easyui-menubutton" data-options="menu:'#mm2'">Default</a>
+            <a class="easyui-menubutton btn-primary" data-options="menu:'#mm2'">Primary</a>
+            <a class="easyui-menubutton btn-success" data-options="menu:'#mm2'">Success</a>
+            <a class="easyui-menubutton btn-info" data-options="menu:'#mm2'">Info</a>
+            <a class="easyui-menubutton btn-warning" data-options="menu:'#mm2'">Warning</a>
+            <a class="easyui-menubutton btn-danger" data-options="menu:'#mm2'">Danger</a>
 
           </div>
         </div>

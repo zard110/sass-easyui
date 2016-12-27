@@ -2,7 +2,7 @@
 /* Common */
 $border-color: #95B8E7;
 $border: 1px solid $border-color;
-$font-size: 12px;
+$font-size: 14px;
 $shadow-background-color: #CCC;
 $mask-background-color: #CCC;
 $toolbar-background-color: #F4F4F4;
@@ -54,9 +54,45 @@ $button-gradient-used: false;
 $button-gradient-from: #FFF;
 $button-gradient-to: #FFF;
 
-$button-radius: 0;
+$button-radius: 4px;
 $button-split-color1: #CCC;
 $button-split-color2: #FFF;
+
+/* Button:Primary */
+$button-primary-background-color: #428bca;
+$button-primary-selected-color: #357ebd;
+$button-primary-text-color: #FFF;
+$button-primary-border-color: #357ebd;
+
+/* Button:Success */
+$button-success-background-color: #5cb85c;
+$button-success-selected-color: #4cae4c;
+$button-success-text-color: #FFF;
+$button-success-border-color: #4cae4c;
+
+/* Button:Info */
+$button-info-background-color: #5bc0de;
+$button-info-selected-color: #46b8da;
+$button-info-text-color: #FFF;
+$button-info-border-color: #46b8da;
+
+/* Button:Warning */
+$button-warning-background-color: #f0ad4e;
+$button-warning-selected-color: #eea236;
+$button-warning-text-color: #FFF;
+$button-warning-border-color: #eea236;
+
+/* Button:Danger */
+$button-danger-background-color: #d9534f;
+$button-danger-selected-color: #d43f3a;
+$button-danger-text-color: #FFF;
+$button-danger-border-color: #d43f3a;
+
+/* Button:Link */
+$button-link-background-color: transparent;
+$button-link-selected-color: transparent;
+$button-link-text-color: #428bca;
+$button-link-border-color: transparent;
 
 /* Button:hover */
 $button-hover-background-color: #E6E6E6;
@@ -109,6 +145,15 @@ $button-hover-border-color: #ADADAD;
   $to: $button-gradient-to
 ) {
   @include linear-gradient($used, $from, $to);
+}
+
+@mixin none-user-select() {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* 垂直居中 */

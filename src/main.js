@@ -17,7 +17,7 @@ angular.module('sass-easyui', [
   var buttonState = {
     name: 'button',
     url: '/button',
-    templateUrl: 'src/modules/button/button.html'
+    templateUrl: '/src/modules/button/button.html'
   };
 
   $stateProvider.state(buttonState);

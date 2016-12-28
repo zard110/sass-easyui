@@ -62,7 +62,7 @@
 }
 
 /**** 大按钮 ****/
-.l-btn-large {
+.l-btn.l-btn-large {
   padding: 6px 16px;
 
   .l-btn-icon {
@@ -76,13 +76,13 @@
   }
 }
 
-.l-btn-large:hover,
-.l-btn-large.l-btn-hover {
+.l-btn.l-btn-large:hover,
+.l-btn.l-btn-large.l-btn-hover {
   padding: 6px 16px;
 }
 
 /**** 小按钮 ****/
-.l-btn-small {
+.l-btn.l-btn-small {
   padding: 2px 4px;
 
   .l-btn-text {
@@ -92,14 +92,17 @@
   }
 }
 
-.l-btn-small:hover,
+.l-btn.l-btn-small:hover,
 .l-btn-small.l-btn-hover {
   padding: 2px 4px;
 }
 
 /**** 扁平 ****/
-.l-btn-plain {
-  border: 1px solid transparent;
+.l-btn.l-btn-plain,
+.l-btn.l-btn-plain:hover,
+.l-btn.l-btn-plain.l-btn-hover {
+  border-color: transparent;
+  border-width: 1px;
 }
 
 /**** Primary Button ****/

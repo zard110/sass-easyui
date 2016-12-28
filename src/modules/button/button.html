@@ -10,23 +10,102 @@
 <br><br><br><br>
 
 <h1>Button Icon</h1>
-<button class="easyui-linkbutton btn-primary" iconCls="icon-add">Left</button>
-<button class="easyui-linkbutton btn-success" iconCls="icon-save" iconAlign="right">Right</button>
-<button class="easyui-linkbutton" iconCls="icon-search" iconAlign="top">Top</button>
-<button class="easyui-linkbutton btn-danger" iconCls="icon-remove" iconAlign="bottom">Bottom</button>
-<button class="easyui-linkbutton" iconCls="icon-clear"></button>
+<button class="easyui-linkbutton" iconCls="iconfont icon-sousuochaxun">Search</button>
+<button class="easyui-linkbutton btn-primary" iconCls="iconfont icon-jia">New</button>
+<button class="easyui-linkbutton btn-success" iconCls="iconfont icon-bianjixiugai">Edit</button>
+<button class="easyui-linkbutton btn-info" iconCls="iconfont icon-wenjianjiai">File</button>
+<button class="easyui-linkbutton btn-warning" iconCls="iconfont icon-pinglun">Message</button>
+<button class="easyui-linkbutton btn-danger" iconCls="iconfont icon-shanchu">Remove</button>
+
+<br><br><br><br>
+
+<h1>Button Icon Position</h1>
+<button class="easyui-linkbutton" iconCls="iconfont icon-fanhui2">Left</button>
+<button class="easyui-linkbutton" iconCls="iconfont icon-jinru2" iconAlign="right">Right</button>
+<button class="easyui-linkbutton" iconCls="iconfont icon-shouqi" iconAlign="top">Top</button>
+<button class="easyui-linkbutton" iconCls="iconfont icon-zhankai" iconAlign="bottom">Bottom</button>
+<button class="easyui-linkbutton" iconCls="iconfont icon-guanbi3"></button>
 
 <br><br><br><br>
 
 <h1>Button Size</h1>
 <button class="easyui-linkbutton" size="small">Small</button>
-<button class="easyui-linkbutton btn-primary">Default</button>
-<button class="easyui-linkbutton btn-success" size="large">Large</button>
+<button class="easyui-linkbutton" iconCls="iconfont icon-suoxiao" size="small">Small</button>
+<button class="easyui-linkbutton" iconCls="iconfont icon-suoxiao" size="small"></button>
 <br><br>
-<button class="easyui-linkbutton" size="small" iconCls="icon-sum">Small</button>
-<button class="easyui-linkbutton btn-info" iconCls="icon-tip">Default</button>
-<button class="easyui-linkbutton btn-warning" size="large" iconCls="icon-filter">Large</button>
+<button class="easyui-linkbutton">Default</button>
+<button class="easyui-linkbutton" iconCls="iconfont icon-mianji">Default</button>
+<button class="easyui-linkbutton" iconCls="iconfont icon-mianji"></button>
 <br><br>
-<button class="easyui-linkbutton" size="small" iconCls="icon-man"></button>
-<button class="easyui-linkbutton btn-success" iconCls="icon-lock"></button>
-<button class="easyui-linkbutton btn-primary" size="large" iconCls="icon-more"></button>
+<button class="easyui-linkbutton" size="large">Large</button>
+<button class="easyui-linkbutton" size="large" iconCls="iconfont icon-fangda">Large</button>
+<button class="easyui-linkbutton" size="large" iconCls="iconfont icon-fangda"></button>
+
+<br><br><br><br>
+
+<h1>Button State</h1>
+<button class="easyui-linkbutton" selected="true" toggle="true">Selected</button>
+<button class="easyui-linkbutton btn-primary" selected="true" toggle="true">Selected</button>
+<button class="easyui-linkbutton btn-success" selected="true" toggle="true">Selected</button>
+<button class="easyui-linkbutton btn-info" selected="true" toggle="true">Selected</button>
+<button class="easyui-linkbutton btn-warning" selected="true" toggle="true">Selected</button>
+<button class="easyui-linkbutton btn-danger" selected="true" toggle="true">Selected</button>
+<button class="easyui-linkbutton btn-link" selected="true" toggle="true">Selected</button>
+<br><br>
+<button class="easyui-linkbutton" disabled="true">Disabled</button>
+<button class="easyui-linkbutton btn-primary" disabled="true">Disabled</button>
+<button class="easyui-linkbutton btn-success" disabled="true">Disabled</button>
+<button class="easyui-linkbutton btn-info" disabled="true">Disabled</button>
+<button class="easyui-linkbutton btn-warning" disabled="true">Disabled</button>
+<button class="easyui-linkbutton btn-danger" disabled="true">Disabled</button>
+<button class="easyui-linkbutton btn-link" disabled="true">Disabled</button>
+<br><br>
+<button class="easyui-linkbutton" plain="true">Plain</button>
+<button class="easyui-linkbutton btn-primary" plain="true">Plain</button>
+<button class="easyui-linkbutton btn-success" plain="true">Plain</button>
+<button class="easyui-linkbutton btn-info" plain="true">Plain</button>
+<button class="easyui-linkbutton btn-warning" plain="true">Plain</button>
+<button class="easyui-linkbutton btn-danger" plain="true">Plain</button>
+<button class="easyui-linkbutton btn-link" plain="true">Plain</button>
+
+<br><br><br><br>
+
+<h1>Button Group</h1>
+<div class="btn-group">
+  <a class="easyui-linkbutton" data-options="group: 'g1', toggle: true">Left</a>
+  <a class="easyui-linkbutton" data-options="group: 'g1', toggle: true">Middle</a>
+  <a class="easyui-linkbutton" data-options="group: 'g1', toggle: true">Right</a>
+</div>
+<br><br>
+<div class="btn-group-vertical">
+  <a class="easyui-linkbutton" data-options="group: 'g2', toggle: true">Top</a>
+  <a class="easyui-linkbutton" data-options="group: 'g2', toggle: true">Middle</a>
+  <a class="easyui-linkbutton" data-options="group: 'g2', toggle: true">Bottom</a>
+</div>
+
+<br><br><br><br>
+
+<h1>Dropdown Button</h1>
+<a class="easyui-menubutton" data-options="menu:'#mm2'">Default</a>
+<a class="easyui-menubutton btn-primary" data-options="menu:'#mm2'">Primary</a>
+<a class="easyui-menubutton btn-success" data-options="menu:'#mm2'">Success</a>
+<a class="easyui-menubutton btn-info" data-options="menu:'#mm2'">Info</a>
+<a class="easyui-menubutton btn-warning" data-options="menu:'#mm2'">Warning</a>
+<a class="easyui-menubutton btn-danger" data-options="menu:'#mm2'">Danger</a>
+
+<div id="mm2" style="width:100px;">
+  <div>Help</div>
+  <div>Update</div>
+  <div>About</div>
+</div>
+
+<br><br><br><br>
+
+<h1>Split Button</h1>
+<a class="easyui-splitbutton" data-options="menu:'#mm2'">Default</a>
+<a class="easyui-splitbutton btn-primary" data-options="menu:'#mm2'">Primary</a>
+<a class="easyui-splitbutton btn-success" data-options="menu:'#mm2'">Success</a>
+<a class="easyui-splitbutton btn-info" data-options="menu:'#mm2'">Info</a>
+<a class="easyui-splitbutton btn-warning" data-options="menu:'#mm2'">Warning</a>
+<a class="easyui-splitbutton btn-danger" data-options="menu:'#mm2'">Danger</a>
+

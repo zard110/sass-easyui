@@ -1,6 +1,8 @@
 import $ from 'jquery'
 import 'easyui'
 
+import 'iconfont'
+
 import './linkbutton.scss'
 import './menubutton.scss'
 

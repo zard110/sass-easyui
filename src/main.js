@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import ngResource from 'angular-resource';
@@ -9,8 +10,19 @@ import './themes/bootstrap/theme'
 angular.module('sass-easyui', [
   uiRouter,
   ngResource
-]).config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+])
+  .config(['$stateProvider', '$urlRouterProvider', uiRouterConfig])
+  .controller('MainController', ['$rootScope', '$timeout', MainController]);
 
+function MainController ($rootScope, $timeout) {
+  $rootScope.$on('$stateChangeSuccess', function() {
+    $timeout(function() {
+      $.parser.parse($('#container'));
+    }, 0);
+  });
+}
+
+function uiRouterConfig ($stateProvider, $urlRouterProvider) {
   $urlRouterProvider
     .otherwise('/button');
 
@@ -31,10 +43,9 @@ angular.module('sass-easyui', [
     url: '/datagrid',
     templateUrl: '/src/modules/datagrid/datagrid.html'
   };
-
-
   $stateProvider.state(iconState);
   $stateProvider.state(buttonState);
   $stateProvider.state(datagridState);
+}
 
-}]);
+

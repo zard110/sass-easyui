@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+// const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 const config = {
   devtool: "source-map",
@@ -17,7 +17,7 @@ const config = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: '[name].js'
   },
 
   module: {
@@ -62,16 +62,16 @@ const config = {
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: ['angular-resource', 'angular-ui-router', 'angular', 'jquery', 'manifest']
-    }),
-
-    new BrowserSyncPlugin({
-      host: 'localhost',
-      port: 3000,
-      files: '',
-      server: {
-        baseDir: './'
-      }
     })
+
+    // new BrowserSyncPlugin({
+    //   host: 'localhost',
+    //   port: 3000,
+    //   files: '',
+    //   server: {
+    //     baseDir: './'
+    //   }
+    // })
   ]
 };
 

@@ -3,30 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>SASS EasyUI</title>
-  <base href="/dist/">
 </head>
 <body ng-app="sass-easyui">
 <div class="easyui-layout" fit="true">
   <div region="west" title="Sass & EasyUI" collapsible="false" style="width:180px">
     <div class="easyui-accordion" border="false" fit="true">
-      <div title="Button" style="padding:10px">
-        <p>Accordion content1.</p>
+      <div title="UI Elements">
+        <ul class="easyui-datalist" fit="true" border="fals">
+          <li><a ui-sref="icon">Icon</a></li>
+          <li><a ui-sref="button">Button</a></li>
+          <li><a ui-sref="datagrid">Datagrid</a></li>
+        </ul>
       </div>
-      <div title="Grid" style="padding:10px">
-        <p>Accordion content2.</p>
+      <div title="Templates" style="padding:10px">
       </div>
     </div>
   </div>
-  <div region="center">
+  <div region="center" id="container">
     <div ui-view style="padding: 10px 20px 150px;"></div>
   </div>
 </div>
 
-<script src="manifest.js"></script>
-<script src="angular.js"></script>
-<script src="angular-resource.js"></script>
-<script src="angular-ui-router.js"></script>
-<script src="jquery.js"></script>
-<script src="main.js"></script>
+<script src="dist/manifest.js"></script>
+<script src="dist/angular.js"></script>
+<script src="dist/angular-resource.js"></script>
+<script src="dist/angular-ui-router.js"></script>
+<script src="dist/jquery.js"></script>
+<script src="dist/main.js"></script>
 </body>
 </html>

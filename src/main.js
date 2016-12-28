@@ -14,12 +14,27 @@ angular.module('sass-easyui', [
   $urlRouterProvider
     .otherwise('/button');
 
-  var buttonState = {
+  const iconState = {
+    name: 'icon',
+    url: '/icon',
+    templateUrl: '/src/modules/icon/icon.html'
+  };
+
+  const buttonState = {
     name: 'button',
     url: '/button',
     templateUrl: '/src/modules/button/button.html'
   };
 
+  const datagridState = {
+    name: 'datagrid',
+    url: '/datagrid',
+    templateUrl: '/src/modules/datagrid/datagrid.html'
+  };
+
+
+  $stateProvider.state(iconState);
   $stateProvider.state(buttonState);
+  $stateProvider.state(datagridState);
 
 }]);

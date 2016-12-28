@@ -1,0 +1,54 @@
+@import "base.scss";
+
+.m-btn {
+
+  .m-btn-downarrow {
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    margin-top: -6px;
+    background: none;
+    color: $button-text-color;
+    font-family: "iconfont" !important;
+    font-weight: 700;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .m-btn-downarrow:before {
+    content: "\f005e";
+  }
+}
+
+.m-btn.btn-primary {
+  .m-btn-downarrow {
+    color: $button-primary-text-color;
+  }
+}
+
+.m-btn.btn-success {
+  .m-btn-downarrow {
+    color: $button-success-text-color;
+  }
+}
+
+.m-btn.btn-info {
+  .m-btn-downarrow {
+    color: $button-info-text-color;
+  }
+}
+
+.m-btn.btn-warning {
+  .m-btn-downarrow {
+    color: $button-warning-text-color;
+  }
+}
+
+.m-btn.btn-danger {
+  .m-btn-downarrow {
+    color: $button-danger-text-color;
+  }
+}
+

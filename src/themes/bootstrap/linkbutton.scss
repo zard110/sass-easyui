@@ -2,7 +2,7 @@
 
 /**** 按钮 ****/
 .l-btn {
-  padding: 6px 12px;
+  padding: 0 12px;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -17,8 +17,8 @@
   }
 
   .l-btn-text {
-    height: 20px;
-    line-height: 20px;
+    height: 32px;
+    line-height: 32px;
     font-size: $font-size;
     color: $button-text-color;
   }
@@ -27,7 +27,7 @@
 .l-btn:hover,
 .l-btn-hover,
 .l-btn-selected {
-  padding: 6px 12px;
+  padding: 0 12px;
   border-radius: $button-radius;
   border-color: $button-hover-border-color;
   @include button-linear-gradient($button-gradient-used, $button-hover-background-color, $button-hover-background-color);
@@ -63,38 +63,38 @@
 
 /**** 大按钮 ****/
 .l-btn.l-btn-large {
-  padding: 6px 16px;
+  padding: 0 16px;
 
   .l-btn-icon {
     font-size: 32px;
   }
 
   .l-btn-text {
-    height: 32px;
-    line-height: 32px;
+    height: 40px;
+    line-height: 40px;
     font-size: 18px;
   }
 }
 
 .l-btn.l-btn-large:hover,
 .l-btn.l-btn-large.l-btn-hover {
-  padding: 6px 16px;
+  padding: 0 16px;
 }
 
 /**** 小按钮 ****/
 .l-btn.l-btn-small {
-  padding: 2px 4px;
+  padding: 0 8px;
 
   .l-btn-text {
-    height: 20px;
-    line-height: 20px;
+    height: 24px;
+    line-height: 24px;
     font-size: 12px;
   }
 }
 
 .l-btn.l-btn-small:hover,
 .l-btn-small.l-btn-hover {
-  padding: 2px 4px;
+  padding: 0 8px;
 }
 
 /**** 扁平 ****/

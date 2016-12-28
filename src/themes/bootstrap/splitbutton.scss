@@ -1,0 +1,50 @@
+@import 'base.scss';
+
+.l-btn.s-btn {
+  padding-right: 8px;
+
+  .l-btn-text {
+    margin-right: 30px;
+  }
+
+  .m-btn-line {
+    width: 28px;
+    right: -8px;
+    display: inline-block;
+    border-color: $button-border-color;
+  }
+}
+.l-btn.s-btn:hover,
+.l-btn.s-btn.l-btn-hover {
+  padding-right: 8px;
+}
+
+.l-btn.s-btn.btn-primary {
+  .m-btn-line {
+    border-color: $button-primary-border-color;
+  }
+}
+
+.l-btn.s-btn.btn-success {
+  .m-btn-line {
+    border-color: $button-success-border-color;
+  }
+}
+
+.l-btn.s-btn.btn-info {
+  .m-btn-line {
+    border-color: $button-info-border-color;
+  }
+}
+
+.l-btn.s-btn.btn-warning {
+  .m-btn-line {
+    border-color: $button-warning-border-color;
+  }
+}
+
+.l-btn.s-btn.btn-danger {
+  .m-btn-line {
+    border-color: $button-danger-border-color;
+  }
+}

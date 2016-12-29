@@ -3,7 +3,7 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import ngResource from 'angular-resource';
 
-import 'easyui'
+import './modules/icon'
 
 import './themes/bootstrap/theme'
 
@@ -38,6 +38,12 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
     templateUrl: '/src/modules/button/button.html'
   };
 
+  const panelState = {
+    name: 'panel',
+    url: '/panel',
+    templateUrl: '/src/modules/panel/panel.html'
+  };
+
   const datagridState = {
     name: 'datagrid',
     url: '/datagrid',
@@ -45,6 +51,7 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
   };
   $stateProvider.state(iconState);
   $stateProvider.state(buttonState);
+  $stateProvider.state(panelState);
   $stateProvider.state(datagridState);
 }
 

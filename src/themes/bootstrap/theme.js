@@ -6,6 +6,9 @@ import 'iconfont'
 import './linkbutton.scss'
 import './menubutton.scss'
 import './splitbutton.scss'
+import './panel.scss'
+import './layout.scss'
+
 
 [
   $.fn.linkbutton.defaults,

@@ -1,0 +1,45 @@
+@import 'bootstrap.scss';
+
+.bs-panel {
+  margin-bottom: 20px;
+  @include bs-box-shadow();
+
+  .panel-header {
+    padding: 10px 15px;
+    @include bs-top-radius();
+    color: $bs-header-text-color;
+    border-color: $bs-header-border-color;
+    background: $bs-header-background-color;
+
+    .panel-title {
+      height: 20px;
+      line-height: 20px;
+      font-size: $bs-font-size;
+      font-weight: bold;
+    }
+  }
+
+  .panel-body {
+    padding: 15px;
+    @include bs-bottom-radius();
+    font-size: $bs-font-size;
+    color: $bs-font-color;
+    border-color: $bs-border-color;
+  }
+
+  .panel-body-noheader {
+    @include bs-radius();
+  }
+
+  .panel-body-nobottom {
+    @include bs-bottom-radius();
+  }
+
+  .panel-footer {
+    height: 20px;
+    line-height: 20px;
+    padding: 10px 15px;
+    border-color: $bs-header-border-color;
+    @include bs-bottom-radius();
+  }
+}

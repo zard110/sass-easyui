@@ -1,3 +1,4 @@
+
 /* Common */
 $bs-font-size: 14px;
 $bs-font-color: #333;
@@ -12,6 +13,32 @@ $bs-header-border-color: #ddd;
 $bs-header-text-color: #333;
 $bs-header-gradient-from: #f5f5f5;
 $bs-header-gradient-to: #f5f5f5;
+
+/* Color */
+$bs-primary-background-color: #428bca;
+$bs-primary-selected-color: #357ebd;
+$bs-primary-text-color: #FFF;
+$bs-primary-border-color: #357ebd;
+
+$bs-success-background-color: #5cb85c;
+$bs-success-selected-color: #4cae4c;
+$bs-success-text-color: #FFF;
+$bs-success-border-color: #4cae4c;
+
+$bs-info-background-color: #5bc0de;
+$bs-info-selected-color: #46b8da;
+$bs-info-text-color: #FFF;
+$bs-info-border-color: #46b8da;
+
+$bs-warning-background-color: #f0ad4e;
+$bs-warning-selected-color: #eea236;
+$bs-warning-text-color: #FFF;
+$bs-warning-border-color: #eea236;
+
+$bs-danger-background-color: #d9534f;
+$bs-danger-selected-color: #d43f3a;
+$bs-danger-text-color: #FFF;
+$bs-danger-border-color: #d43f3a;
 
 /* 圆角 */
 @mixin bs-radius($amount: $bs-border-radius) {
@@ -34,5 +61,13 @@ $bs-header-gradient-to: #f5f5f5;
 @mixin  bs-box-shadow() {
   -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+@mixin  iconfont() {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 

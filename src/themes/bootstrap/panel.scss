@@ -1,6 +1,8 @@
 @import 'bootstrap.scss';
 
+/* Bootstrap Panel */
 .bs-panel {
+  width: 100%;
   margin-bottom: 20px;
   @include bs-box-shadow();
 
@@ -10,6 +12,56 @@
     color: $bs-header-text-color;
     border-color: $bs-header-border-color;
     background: $bs-header-background-color;
+
+    .panel-icon, .panel-tool {
+      top: 50%;
+      margin-top: -10px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 20px;
+      color: $bs-header-text-color;
+    }
+
+    .panel-icon {
+      left: 10px;
+      width: 20px;
+    }
+
+    .panel-tool {
+      right: 10px;
+    }
+
+    .panel-with-icon {
+      padding-left: 23px;
+    }
+
+    .panel-tool a {
+      width: 20px;
+      height: 20px;
+      margin-left: 8px;
+      background: none;
+      color: $bs-header-text-color;
+      @include iconfont();
+
+      &.panel-tool-collapse:before {
+        content: "\F005D";
+      }
+      &.panel-tool-expand:before {
+        content: "\F005E";
+      }
+      &.panel-tool-min:before {
+        content: "\F007E";
+      }
+      &.panel-tool-max:before {
+        content: "\F0016";
+      }
+      &.panel-tool-restore:before {
+        content: "\F004C";
+      }
+      &.panel-tool-close:before {
+        content: "\F0096";
+      }
+    }
 
     .panel-title {
       height: 20px;
@@ -32,14 +84,136 @@
   }
 
   .panel-body-nobottom {
-    @include bs-bottom-radius();
+    @include bs-bottom-radius(0);
+  }
+
+  .panel-body-noheader.panel-body-nobottom {
+    @include bs-radius();
   }
 
   .panel-footer {
     height: 20px;
     line-height: 20px;
     padding: 10px 15px;
+    font-size: $bs-font-size - 2;
     border-color: $bs-header-border-color;
     @include bs-bottom-radius();
   }
 }
+
+/* Primary Panel */
+.panel-primary {
+  .panel-header {
+    border-color: $bs-primary-border-color;
+    border-bottom-color: transparent;
+    background: $bs-primary-background-color;
+
+    .panel-title,
+    .panel-icon,
+    .panel-tool a {
+      color: $bs-primary-text-color;
+    }
+  }
+
+  .panel-body, .panel-footer {
+    border-color: $bs-primary-border-color;
+  }
+
+  .panel-footer {
+    border-top-color: $bs-border-color;
+  }
+}
+
+/* Success Panel */
+.panel-success {
+  .panel-header {
+    border-color: $bs-success-border-color;
+    border-bottom-color: transparent;
+    background: $bs-success-background-color;
+
+    .panel-title,
+    .panel-icon,
+    .panel-tool a {
+      color: $bs-success-text-color;
+    }
+  }
+
+  .panel-body, .panel-footer {
+    border-color: $bs-success-border-color;
+  }
+
+  .panel-footer {
+    border-top-color: $bs-border-color;
+  }
+}
+
+/* Info Panel */
+.panel-info {
+  .panel-header {
+    border-color: $bs-info-border-color;
+    border-bottom-color: transparent;
+    background: $bs-info-background-color;
+
+    .panel-title,
+    .panel-icon,
+    .panel-tool a {
+      color: $bs-info-text-color;
+    }
+  }
+
+  .panel-body, .panel-footer {
+    border-color: $bs-info-border-color;
+  }
+
+  .panel-footer {
+    border-top-color: $bs-border-color;
+  }
+}
+
+/* Warning Panel */
+.panel-warning {
+  .panel-header {
+    border-color: $bs-warning-border-color;
+    border-bottom-color: transparent;
+    background: $bs-warning-background-color;
+
+    .panel-title,
+    .panel-icon,
+    .panel-tool a {
+      color: $bs-warning-text-color;
+    }
+  }
+
+  .panel-body, .panel-footer {
+    border-color: $bs-warning-border-color;
+  }
+
+  .panel-footer {
+    border-top-color: $bs-border-color;
+  }
+}
+
+/* Danger Panel */
+.panel-danger {
+  .panel-header {
+    border-color: $bs-danger-border-color;
+    border-bottom-color: transparent;
+    background: $bs-danger-background-color;
+
+    .panel-title,
+    .panel-icon,
+    .panel-tool a {
+      color: $bs-danger-text-color;
+    }
+  }
+
+  .panel-body, .panel-footer {
+    border-color: $bs-danger-border-color;
+  }
+
+  .panel-footer {
+    border-top-color: $bs-border-color;
+  }
+}
+
+

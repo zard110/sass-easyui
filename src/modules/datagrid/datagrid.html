@@ -1,1 +1,33 @@
-hello, datagrid!
+<h1>Base Datagrid</h1>
+<table class="easyui-datagrid" url="src/modules/datagrid/user.json">
+  <caption>Optional table caption.</caption>
+  <thead>
+    <tr>
+      <th field="firstName" width="100">First Name</th>
+      <th field="lastName" width="100">Last Name</th>
+      <th field="userName" width="100">Username</th>
+    </tr>
+  </thead>
+</table>
+
+<h1>CRUD Datagrid</h1>
+<table class="easyui-datagrid"
+       url="src/modules/datagrid/user.json" rownumbers="true" pagination="true" toolbar="#datagrid_toolbar">
+  <caption>Optional table caption.</caption>
+  <thead>
+  <tr>
+    <th field="firstName" width="100">First Name</th>
+    <th field="lastName" width="100">Last Name</th>
+    <th field="userName" width="100">Username</th>
+  </tr>
+  </thead>
+</table>
+
+<div id="datagrid_toolbar">
+  <button class="easyui-linkbutton btn-primary" iconCls="iconfont icon-diannao" size="small" plain="true"></button>
+  <button class="easyui-linkbutton btn-success" iconCls="iconfont icon-bianjixiugai" size="small" plain="true"></button>
+  <button class="easyui-linkbutton btn-warning" iconCls="iconfont icon-shezhi" size="small" plain="true"></button>
+  <button class="easyui-linkbutton btn-danger" iconCls="iconfont icon-shanchu" size="small" plain="true"></button>
+</div>
+
+

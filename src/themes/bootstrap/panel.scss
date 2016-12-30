@@ -1,8 +1,18 @@
 @import 'bootstrap.scss';
 
+.easyui-panel {
+  width: 100%;
+}
+
+.panel {
+  .panel-body {
+    font-size: $bs-font-size;
+    color: $bs-font-color;
+  }
+}
+
 /* Bootstrap Panel */
 .bs-panel {
-  width: 100%;
   margin-bottom: 20px;
   @include bs-box-shadow();
 

@@ -1,0 +1,60 @@
+@import 'bootstrap.scss';
+
+.datagrid {
+
+
+  .datagrid-wrap {
+    border-color: $bs-border-color;
+
+    &.panel-body {
+      padding: 0;
+    }
+  }
+
+  .datagrid-toolbar {
+    padding: 8px;
+  }
+
+  .datagrid-cell,
+  .datagrid-cell-group,
+  .datagrid-header-rownumber,
+  .datagrid-cell-rownumber {
+    padding: 8px;
+    height: 20px;
+    line-height: 20px;
+    font-size: $bs-font-size;
+    color: $bs-font-color;
+
+    // 修正字体
+    span {
+      font-size: $bs-font-size;
+      color: $bs-font-color;
+    }
+  }
+
+  // 修正背景色
+  .datagrid-header,
+  .datagrid-td-rownumber {
+    background: $bs-header-background-color;
+  }
+
+  // 修正虚线
+  .datagrid-header td,
+  .datagrid-body td,
+  .datagrid-footer td {
+    border-color: $bs-border-color;
+    border-style: solid;
+  }
+
+  .datagrid-header-row {
+    .datagrid-cell,
+    .datagrid-cell-group {
+      font-weight: bold;
+    }
+  }
+
+  // 最后一行
+  .datagrid-row:last-child td {
+    border-bottom: none;
+  }
+}

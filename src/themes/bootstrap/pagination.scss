@@ -1,0 +1,32 @@
+@import 'bootstrap.scss';
+
+.pagination {
+  padding: 5px;
+
+  .l-btn {
+    background: transparent;
+    padding: 0 8px;
+
+    &:hover {
+      background: $bs-background-color;
+    }
+
+    .l-btn-text {
+      height: 24px;
+      line-height: 24px;
+      font-size: 12px;
+    }
+  }
+
+  .pagination-page-list, .pagination-num {
+    border-color: $bs-border-color;
+  }
+
+  .pagination-info, span {
+    font-size: $bs-font-size;
+    color: $bs-font-color;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+}
+

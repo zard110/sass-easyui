@@ -51,6 +51,7 @@
 .l-btn-disabled,
 .l-btn-disabled:hover {
   opacity: 0.65;
+  cursor: not-allowed;
 }
 .l-btn-disabled .l-btn-text,
 .l-btn-disabled .l-btn-icon {

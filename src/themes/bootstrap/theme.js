@@ -37,3 +37,13 @@ import './pagination.scss'
     method: 'GET'
   });
 });
+
+[
+  $.fn.tree.defaults
+].map(function(defaults) {
+    $.extend(defaults, {
+      lines: true
+    });
+  });
+
+

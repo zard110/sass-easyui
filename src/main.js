@@ -1,18 +1,26 @@
-import $ from 'jquery';
-import angular from 'angular';
-import uiRouter from 'angular-ui-router';
-import ngResource from 'angular-resource';
+import $ from 'jquery'
+import angular from 'angular'
+import uiRouter from 'angular-ui-router'
+import ngResource from 'angular-resource'
 
+import 'jquery.nicescroll'
 import './modules/icon'
-
 import './themes/bootstrap/theme'
+
+import Tree from './modules/tree'
 
 angular.module('sass-easyui', [
   uiRouter,
-  ngResource
+  ngResource,
+
+  Tree
 ])
   .config(['$stateProvider', '$urlRouterProvider', uiRouterConfig])
   .controller('MainController', ['$rootScope', '$timeout', MainController]);
+
+//$(function() {
+//  $('#container').niceScroll();
+//});
 
 function MainController ($rootScope, $timeout) {
   $rootScope.$on('$stateChangeSuccess', function() {
@@ -49,10 +57,26 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
     url: '/datagrid',
     templateUrl: '/src/modules/datagrid/datagrid.html'
   };
+
+  const treeState = {
+    name: 'tree',
+    url: '/tree',
+    templateUrl: '/src/modules/tree/tree.html',
+    controller: 'TreeController'
+  };
+
+  const treegridState = {
+    name: 'treegrid',
+    url: '/treegrid',
+    templateUrl: '/src/modules/treegrid/treegrid.html'
+  };
+
   $stateProvider.state(iconState);
   $stateProvider.state(buttonState);
   $stateProvider.state(panelState);
   $stateProvider.state(datagridState);
+  $stateProvider.state(treeState);
+  $stateProvider.state(treegridState);
 }
 
 

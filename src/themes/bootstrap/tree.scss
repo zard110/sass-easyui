@@ -1,0 +1,17 @@
+@import "./bootstrap.scss";
+
+.tree-node {
+  height: 20px;
+  padding: 4px;
+
+  .tree-icon {
+    display: none;
+  }
+
+  .tree-title {
+    height: 20px;
+    line-height: 20px;
+    font-size: $bs-font-size;
+    color: $bs-font-color;
+  }
+}

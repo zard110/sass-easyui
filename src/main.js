@@ -8,6 +8,7 @@ import './modules/icon'
 import './themes/bootstrap/theme'
 
 import Tree from './modules/tree'
+import Tree from './modules/treegrid'
 
 angular.module('sass-easyui', [
   uiRouter,
@@ -68,7 +69,8 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
   const treegridState = {
     name: 'treegrid',
     url: '/treegrid',
-    templateUrl: '/src/modules/treegrid/treegrid.html'
+    templateUrl: '/src/modules/treegrid/treegrid.html',
+    controller: 'TreegridController'
   };
 
   $stateProvider.state(iconState);

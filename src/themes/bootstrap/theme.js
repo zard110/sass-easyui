@@ -3,13 +3,23 @@ import 'easyui'
 
 import 'iconfont'
 
+// TODO 反色、labeled、文字 button
 import './linkbutton.scss'
+
+// TODO 替换下拉箭头图标
 import './menubutton.scss'
 import './splitbutton.scss'
 import './panel.scss'
 import './layout.scss'
+
+// TODO 固定列未测试
 import './datagrid.scss'
+
+// TODO 替换图标
 import './pagination.scss'
+
+// TODO 在没有统一图标前，暂时隐藏了文件图标的显示
+import './tree.scss'
 
 // 修改按钮默认大小
 [
@@ -28,7 +38,8 @@ import './pagination.scss'
 
 
 [
-  $.fn.datagrid.defaults
+  $.fn.datagrid.defaults,
+  $.fn.treegrid.defaults
 ].map(function(defaults) {
   $.extend(defaults, {
     fitColumns: true,
@@ -38,12 +49,5 @@ import './pagination.scss'
   });
 });
 
-[
-  $.fn.tree.defaults
-].map(function(defaults) {
-    $.extend(defaults, {
-      lines: true
-    });
-  });
 
 

@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-6">
       <div class="easyui-panel" cls="bs-panel">
-        <form role="form">
+        <form>
           <div class="form-group">
             <label>User Name</label>
             <input type="text" class="easyui-textbox" style="width: 100%;" required value="123">
@@ -23,32 +23,66 @@
             </div>
           </div>
 
-          <div class="radio">
-            <label>
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-              Option one is this and that&mdash;be sure to include why it's great
-            </label>
+          <div class="form-group">
+            <label>Radio</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" value="option1" checked>
+                Option one is this and that&mdash;be sure to include why it's great
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" value="option2">
+                Option two can be something else and selecting it will deselect option one
+              </label>
+            </div>
+            <div class="radio disabled">
+              <label>
+                <input type="radio" name="optionsRadios" value="option3" disabled>
+                Option three is disabled
+              </label>
+            </div>
           </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-              Option two can be something else and selecting it will deselect option one
-            </label>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Country</label>
+                <input type="text" class="easyui-combobox" style="width: 100%;">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Combotree</label>
+                <input type="text" class="easyui-combotree" style="width: 100%;">
+              </div>
+            </div>
           </div>
-          <div class="radio disabled">
-            <label>
-              <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-              Option three is disabled
-            </label>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Combo Grid</label>
+                <input type="text" class="easyui-combogrid" style="width: 100%;">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Combo Tree Grid</label>
+                <input type="text" class="easyui-combotreegrid" style="width: 100%;">
+              </div>
+            </div>
           </div>
 
           <div class="form-group">
-            <label>Country</label>
-            <input type="text" class="easyui-combobox" style="width: 100%;">
+            <label>Tag Box</label>
+            <input class="easyui-tagbox" value="Apple,Orange" style="width:100%">
           </div>
+
           <div class="form-group">
-            <label>Combotree</label>
-            <input type="text" class="easyui-combotree" style="width: 100%;">
+            <label>File</label>
+            <input type="text" class="easyui-filebox" style="width: 100%;">
           </div>
           <button type="submit" class="easyui-linkbutton btn-primary">Submit</button>
         </form>
@@ -57,7 +91,7 @@
 
     <div class="col-md-6">
       <div class="easyui-panel" cls="bs-panel">
-        <form role="form">
+        <form>
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
@@ -118,7 +152,13 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label>Slider</label>
-                <input type="text" class="easyui-switchbutton" checked style="display: block;">
+                <input type="text" class="easyui-switchbutton" checked>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Number Box</label>
+                <input type="text" class="easyui-numberbox" checked style="width: 100%;">
               </div>
             </div>
           </div>
@@ -138,216 +178,4 @@
         </form>
       </div>
     </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="easyui-panel" cls="bs-panel">
-      <form role="form">
-        <div class="form-group">
-          <label>User Name</label>
-          <input type="text" class="easyui-textbox" style="width: 100%;" required value="123">
-        </div>
-
-        <div class="form-group">
-          <label>Checkbox</label>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="">
-              Option one is this and that&mdash;be sure to include why it's great
-            </label>
-          </div>
-          <div class="checkbox disabled">
-            <label>
-              <input type="checkbox" value="" disabled>
-              Option two is disabled
-            </label>
-          </div>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            Option one is this and that&mdash;be sure to include why it's great
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            Option two can be something else and selecting it will deselect option one
-          </label>
-        </div>
-        <div class="radio disabled">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-            Option three is disabled
-          </label>
-        </div>
-
-        <div class="form-group">
-          <label>Country</label>
-          <input type="text" class="easyui-combobox" style="width: 100%;">
-        </div>
-        <div class="form-group">
-          <label>Combotree</label>
-          <input type="text" class="easyui-combotree" style="width: 100%;">
-        </div>
-        <button type="submit" class="easyui-linkbutton btn-primary">Submit</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="easyui-panel" cls="bs-panel">
-      <form role="form">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" class="easyui-textbox" style="width: 100%;">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" class="easyui-textbox" style="width: 100%;">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>Begin Date</label>
-              <input type="text" class="easyui-datebox" style="width: 100%;">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>End Time</label>
-              <input type="text" class="easyui-datetimebox" style="width: 100%;">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <label>User Name</label>
-              <input type="text" class="easyui-textbox" style="width: 100%;">
-            </div>
-            <div class="form-group">
-              <label>Password</label>
-              <input type="text" class="easyui-passwordbox" style="width: 100%;">
-            </div>
-            <button type="submit" class="easyui-linkbutton btn-primary">Submit</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="easyui-panel" cls="bs-panel">
-      <form role="form">
-        <div class="form-group">
-          <label>User Name</label>
-          <input type="text" class="easyui-textbox" style="width: 100%;" required value="123">
-        </div>
-
-        <div class="form-group">
-          <label>Checkbox</label>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" value="">
-              Option one is this and that&mdash;be sure to include why it's great
-            </label>
-          </div>
-          <div class="checkbox disabled">
-            <label>
-              <input type="checkbox" value="" disabled>
-              Option two is disabled
-            </label>
-          </div>
-        </div>
-
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            Option one is this and that&mdash;be sure to include why it's great
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            Option two can be something else and selecting it will deselect option one
-          </label>
-        </div>
-        <div class="radio disabled">
-          <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-            Option three is disabled
-          </label>
-        </div>
-
-        <div class="form-group">
-          <label>Country</label>
-          <input type="text" class="easyui-combobox" style="width: 100%;">
-        </div>
-        <div class="form-group">
-          <label>Combotree</label>
-          <input type="text" class="easyui-combotree" style="width: 100%;">
-        </div>
-        <button type="submit" class="easyui-linkbutton btn-primary">Submit</button>
-      </form>
-    </div>
-  </div>
-
-  <div class="col-md-6">
-    <div class="easyui-panel" cls="bs-panel">
-      <form role="form">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" class="easyui-textbox" style="width: 100%;">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" class="easyui-textbox" style="width: 100%;">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>Begin Date</label>
-              <input type="text" class="easyui-datebox" style="width: 100%;">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label>End Time</label>
-              <input type="text" class="easyui-datetimebox" style="width: 100%;">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <label>User Name</label>
-              <input type="text" class="easyui-textbox" style="width: 100%;">
-            </div>
-            <div class="form-group">
-              <label>Password</label>
-              <input type="text" class="easyui-passwordbox" style="width: 100%;">
-            </div>
-            <button type="submit" class="easyui-linkbutton btn-primary">Submit</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
 </div>

@@ -5,7 +5,7 @@ import ngResource from 'angular-resource'
 
 import 'jquery.nicescroll'
 import './modules/icon'
-import './themes/bootstrap/theme'
+import './themes/bootstrap'
 
 import Tree from './modules/tree'
 import Treegrid from './modules/treegrid'
@@ -20,15 +20,24 @@ angular.module('sass-easyui', [
   .config(['$stateProvider', '$urlRouterProvider', uiRouterConfig])
   .controller('MainController', ['$rootScope', '$timeout', MainController]);
 
-//$(function() {
-//  $('#container').niceScroll();
-//});
+$.parser.onComplete = function() {
+  $('#container').niceScroll({
+    cursorcolor: '#ddd'
+  });
+};
+
+$(function() {
+  $.parser.parse();
+  $.parser.onComplete = $.noop;
+  $.parser.initialized = true;
+});
 
 function MainController ($rootScope, $timeout) {
   $rootScope.$on('$stateChangeSuccess', function() {
+    if (!$.parser.initialized) return;
     $timeout(function() {
       $.parser.parse($('#container'));
-    }, 0);
+    }, 10);
   });
 }
 

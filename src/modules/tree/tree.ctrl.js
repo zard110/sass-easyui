@@ -11,7 +11,8 @@ function TreeController(TreeAPI) {
 
   TreeAPI.query().$promise
     .then(function (data) {
-      $('#t1').tree('loadData', data);
+      console.log($('#tree_basic'));
+      $('#tree_basic').tree('loadData', data);
     });
 
 }

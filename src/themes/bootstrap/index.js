@@ -22,10 +22,11 @@ import './pagination.scss'
 
 // TODO 在没有统一图标前，暂时隐藏了文件图标的显示
 import './tree.scss'
-
 import './tab.scss'
-
 import './textbox.scss'
+import './form.scss'
+
+$.parser.auto = false;
 
 // 修改按钮默认大小
 [
@@ -58,7 +59,19 @@ import './textbox.scss'
 [
   $.fn.textbox.defaults,
   $.fn.combobox.defaults,
-  $.fn.combotree.defaults
+  $.fn.combotree.defaults,
+  $.fn.combogrid.defaults,
+  $.fn.combotreegrid.defaults,
+  $.fn.numberbox.defaults,
+  $.fn.datebox.defaults,
+  $.fn.datetimebox.defaults,
+  $.fn.timespinner.defaults,
+  $.fn.datetimespinner.defaults,
+  $.fn.numberspinner.defaults,
+  $.fn.passwordbox.defaults,
+  $.fn.filebox.defaults,
+  $.fn.tagbox.defaults,
+  $.fn.slider.defaults
 ].map(function(defaults) {
   $.extend(defaults, {
     height: 34

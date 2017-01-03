@@ -8,13 +8,14 @@ import './modules/icon'
 import './themes/bootstrap/theme'
 
 import Tree from './modules/tree'
-import Tree from './modules/treegrid'
+import Treegrid from './modules/treegrid'
 
 angular.module('sass-easyui', [
   uiRouter,
   ngResource,
 
-  Tree
+  Tree,
+  Treegrid
 ])
   .config(['$stateProvider', '$urlRouterProvider', uiRouterConfig])
   .controller('MainController', ['$rootScope', '$timeout', MainController]);
@@ -47,10 +48,22 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
     templateUrl: '/src/modules/button/button.html'
   };
 
+  const formState = {
+    name: 'form',
+    url: '/form',
+    templateUrl: '/src/modules/form/form.html'
+  };
+
   const panelState = {
     name: 'panel',
     url: '/panel',
     templateUrl: '/src/modules/panel/panel.html'
+  };
+
+  const tabsState = {
+    name: 'tabs',
+    url: '/tabs',
+    templateUrl: '/src/modules/tabs/tabs.html'
   };
 
   const datagridState = {
@@ -75,7 +88,9 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
 
   $stateProvider.state(iconState);
   $stateProvider.state(buttonState);
+  $stateProvider.state(formState);
   $stateProvider.state(panelState);
+  $stateProvider.state(tabsState);
   $stateProvider.state(datagridState);
   $stateProvider.state(treeState);
   $stateProvider.state(treegridState);

@@ -75,7 +75,7 @@ var _15=t.data("passwordbox");
 var _16=t.data("passwordbox").options;
 _15.checking=true;
 _15.value=t.passwordbox("getText");
-(function(){
+(function anonymous(){
 if(_15.checking){
 var _17=t.passwordbox("getText");
 if(_15.value!=_17){
@@ -90,7 +90,7 @@ _7(_14,t.passwordbox("getText"),true);
 _15.lastTimer=undefined;
 },_16.lastDelay);
 }
-setTimeout(arguments.callee,_16.checkInterval);
+setTimeout(anonymous,_16.checkInterval);
 }
 })();
 };

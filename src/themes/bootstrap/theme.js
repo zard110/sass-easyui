@@ -3,6 +3,8 @@ import 'easyui'
 
 import 'iconfont'
 
+import './bootstrap-custom.css'
+
 // TODO 反色、labeled、文字 button
 import './linkbutton.scss'
 
@@ -20,6 +22,10 @@ import './pagination.scss'
 
 // TODO 在没有统一图标前，暂时隐藏了文件图标的显示
 import './tree.scss'
+
+import './tab.scss'
+
+import './textbox.scss'
 
 // 修改按钮默认大小
 [
@@ -46,6 +52,16 @@ import './tree.scss'
     autoRowHeight: false,
     striped: true,
     method: 'GET'
+  });
+});
+
+[
+  $.fn.textbox.defaults,
+  $.fn.combobox.defaults,
+  $.fn.combotree.defaults
+].map(function(defaults) {
+  $.extend(defaults, {
+    height: 34
   });
 });
 

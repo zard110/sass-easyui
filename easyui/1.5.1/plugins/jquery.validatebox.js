@@ -46,28 +46,30 @@ return;
 }
 _c.validating=true;
 _c.value=_d.val(_b);
-(function(){
-if(!$(_b).is(":visible")){
-_c.validating=false;
-}
-if(_c.validating){
-var _e=_d.val(_b);
-if(_c.value!=_e){
-_c.value=_e;
-if(_c.timer){
-clearTimeout(_c.timer);
-}
-_c.timer=setTimeout(function(){
-$(_b).validatebox("validate");
-},_d.delay);
-}else{
-if(_c.message){
-_d.err(_b,_c.message);
-}
-}
-setTimeout(arguments.callee,_d.interval);
-}
-})();
+
+  (function anonymous() {
+    if (!$(_b).is(":visible")) {
+      _c.validating = false;
+    }
+    if (_c.validating) {
+      var _e = _d.val(_b);
+      if (_c.value != _e) {
+        _c.value = _e;
+        if (_c.timer) {
+          clearTimeout(_c.timer);
+        }
+        _c.timer = setTimeout(function () {
+          $(_b).validatebox("validate");
+        }, _d.delay);
+      } else {
+        if (_c.message) {
+          _d.err(_b, _c.message);
+        }
+      }
+      setTimeout(anonymous, _d.interval);
+    }
+  })();
+
 };
 function _f(e){
 var _10=e.data.target;

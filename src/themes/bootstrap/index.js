@@ -25,6 +25,7 @@ import './tree.scss'
 import './tab.scss'
 import './textbox.scss'
 import './form.scss'
+import './combo.scss'
 
 $.parser.auto = false;
 
@@ -75,6 +76,18 @@ $.parser.auto = false;
 ].map(function(defaults) {
   $.extend(defaults, {
     height: 34
+  });
+});
+
+[
+  $.fn.combobox.defaults,
+  $.fn.combotree.defaults,
+  $.fn.combogrid.defaults,
+  $.fn.combotreegrid.defaults,
+].map(function(defaults) {
+  $.extend(defaults, {
+    editable: false,
+    prompt: '——请选择——'
   });
 });
 

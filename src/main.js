@@ -9,13 +9,15 @@ import './themes/bootstrap'
 
 import Tree from './modules/tree'
 import Treegrid from './modules/treegrid'
+import Form from './modules/form'
 
 angular.module('sass-easyui', [
   uiRouter,
   ngResource,
 
   Tree,
-  Treegrid
+  Treegrid,
+  Form
 ])
   .config(['$stateProvider', '$urlRouterProvider', uiRouterConfig])
   .controller('MainController', ['$rootScope', '$timeout', MainController]);
@@ -60,7 +62,8 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
   const formState = {
     name: 'form',
     url: '/form',
-    templateUrl: '/src/modules/form/form.html'
+    templateUrl: '/src/modules/form/form.html',
+    controller: 'FormController'
   };
 
   const panelState = {

@@ -1,0 +1,25 @@
+@import 'bootstrap.scss';
+
+.combo {
+  .combo-arrow {
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.combo-panel.panel-body {
+  border-color: #66afe9;
+
+  .combobox-item,
+  .combobox-group,
+  .combobox-stick {
+    padding: 4px;
+    font-size: $bs-font-size;
+    color: $bs-font-color;
+    height: 20px;
+    line-height: 20px;
+  }
+}

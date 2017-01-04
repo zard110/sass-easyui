@@ -49,4 +49,4 @@ Temporary Items
 .idea
 dist
 node_modules
-.log
+npm-debug.log*

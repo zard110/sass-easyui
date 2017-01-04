@@ -4,8 +4,8 @@
   background: transparent;
   border: none;
 
-  .tabs {
-    padding-left: 0;
+  ul.tabs {
+    padding: 0;
 
     &>li {
       .tabs-close {
@@ -17,14 +17,14 @@
           display: block;
         }
 
-        .tabs-inner {
+        a.tabs-inner {
           background: #eee;
           border-color: #eee #eee #ddd;
         }
       }
     }
 
-    .tabs-inner {
+    a.tabs-inner {
       padding: 0 15px;
       border-color:transparent;
       background: transparent;
@@ -53,8 +53,8 @@
       filter: alpha(opacity=60);
     }
 
-    .tabs-selected {
-      .tabs-inner {
+    li.tabs-selected {
+      a.tabs-inner {
         background: #fff;
         border: 1px solid #ddd;
         border-bottom-color: transparent;
@@ -67,9 +67,17 @@
     }
 
     &.tabs-pill {
+      padding-bottom: 4px;
+
+      .tabs-inner {
+        border: none;
+        border-radius: 4px;
+      }
+
       .tabs-selected {
         .tabs-inner {
           background: #428bca;
+          border: none;
           .tabs-title,
           .tabs-icon {
             color: #fff;
@@ -86,6 +94,18 @@
     & > .panel-body {
       padding: 10px 15px;
     }
+  }
+
+  &.tabs-panels-right {
+    border-radius: 0 4px 4px 0;
+  }
+
+  &.tabs-panels-left {
+    border-radius: 4px 0 0 4px;
+  }
+
+  &.tabs-panels-top {
+    border-radius: 4px 4px 0 0;
   }
 }
 

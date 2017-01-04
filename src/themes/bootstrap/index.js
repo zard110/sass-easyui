@@ -22,7 +22,10 @@ import './pagination.scss'
 
 // TODO 在没有统一图标前，暂时隐藏了文件图标的显示
 import './tree.scss'
-import './tab.scss'
+
+// TODO Header的位置反映在父容器上
+import './tabs.scss'
+
 import './textbox.scss'
 import './form.scss'
 import './combo.scss'
@@ -88,6 +91,15 @@ $.parser.auto = false;
   $.extend(defaults, {
     editable: false,
     prompt: '——请选择——'
+  });
+});
+
+[
+  $.fn.tabs.defaults
+].map(function(defaults) {
+  $.extend(defaults, {
+    tabHeight: 42,
+    plain: true
   });
 });
 

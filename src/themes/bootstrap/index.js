@@ -24,7 +24,7 @@ import './pagination.scss'
 import './tree.scss'
 
 // TODO Header的位置反映在父容器上
-import './tabs.scss'
+import './tabs2.scss'
 
 import './textbox.scss'
 import './form.scss'

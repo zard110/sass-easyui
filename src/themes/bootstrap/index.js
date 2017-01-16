@@ -23,12 +23,12 @@ import './pagination.scss'
 // TODO 在没有统一图标前，暂时隐藏了文件图标的显示
 import './tree.scss'
 
-// TODO Header的位置反映在父容器上
 import './tabs.scss'
 
 import './textbox.scss'
 import './form.scss'
 import './combo.scss'
+import './accordion.scss'
 
 $.parser.auto = false;
 

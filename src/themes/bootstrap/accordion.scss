@@ -1,0 +1,10 @@
+@import "bootstrap.scss";
+
+.accordion {
+  &>.panel {
+    &>.panel-body {
+      padding: 0;
+    }
+    margin: 0;
+  }
+}

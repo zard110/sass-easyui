@@ -7,6 +7,8 @@
   .window-body {
     border: none;
     border-radius: 0;
+    font-size: $bs-font-size;
+    color: $bs-font-color;
   }
 
   .dialog-toolbar {
@@ -25,3 +27,4 @@
   border: 1px dashed #bbb;
   border-radius: $bs-border-radius;
 }
+

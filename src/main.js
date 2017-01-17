@@ -12,6 +12,7 @@ import Treegrid from './modules/treegrid'
 import Form from './modules/form'
 import Menu from './modules/menu'
 import Dialog from './modules/dialog'
+import Messager from './modules/messager'
 
 angular.module('sass-easyui', [
   uiRouter,
@@ -21,7 +22,8 @@ angular.module('sass-easyui', [
   Treegrid,
   Form,
   Menu,
-  Dialog
+  Dialog,
+  Messager
 ])
   .config(['$stateProvider', '$urlRouterProvider', uiRouterConfig])
   .controller('MainController', ['$rootScope', '$timeout', MainController]);
@@ -116,6 +118,13 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
     controller: 'DialogController'
   };
 
+  const messagerState = {
+    name: 'messager',
+    url: '/messager',
+    templateUrl: '/src/modules/messager/messager.html',
+    controller: 'MessagerController'
+  };
+
   $stateProvider.state(iconState);
   $stateProvider.state(buttonState);
   $stateProvider.state(formState);
@@ -126,6 +135,7 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider.state(treegridState);
   $stateProvider.state(menuState);
   $stateProvider.state(dialogState);
+  $stateProvider.state(messagerState);
 }
 
 

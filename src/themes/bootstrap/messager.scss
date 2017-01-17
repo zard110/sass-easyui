@@ -1,0 +1,45 @@
+@import "./bootstrap.scss";
+@import "./base.scss";
+
+.window.messager-window {
+  .messager-body {
+    box-sizing: border-box;
+    padding: 10px 10px 30px 10px;
+    width: 100%!important;
+    height: auto!important;
+
+    .messager-input {
+      display: block;
+      font-size: $bs-font-size;
+      color: $bs-font-color;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+      &:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+      }
+    }
+  }
+
+  .messager-button {
+    a.l-btn:first-child {
+      border-color: $button-primary-border-color;
+      @include button-linear-gradient($button-gradient-used, $button-primary-background-color, $button-primary-background-color);
+
+      .l-btn-icon,
+      .l-btn-text {
+        color: $button-primary-text-color;
+      }
+    }
+  }
+}

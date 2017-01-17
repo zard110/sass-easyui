@@ -32,6 +32,9 @@ import './accordion.scss'
 import './menu.scss'
 import './window.scss'
 
+// TODO messager中的show窗口没有特殊的标记和普通窗口区分
+import './messager.scss'
+
 $.parser.auto = false;
 
 // 修改按钮默认大小

@@ -7,20 +7,14 @@ export default ng.module('dialog.controller', [])
 
 function DialogController($timeout) {
   $timeout(function() {
-    $('#dd').dialog({
+    $('#dialog').dialog({
       title: 'My Dialog',
       width: 400,
       height: 200,
       closed: false,
       cache: false,
       modal: true,
-      buttons:[{
-        text:'Save',
-        handler:function(){alert('Save')}
-      },{
-        text:'Close',
-        handler:function(){alert('Close')}
-      }]
+      buttons: '#dialog_buttons'
     });
   }, 100)
 }

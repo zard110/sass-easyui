@@ -1,0 +1,27 @@
+@import 'bootstrap.scss';
+
+.window {
+  padding: 0;
+  border-color: $bs-border-color;
+
+  .window-body {
+    border: none;
+    border-radius: 0;
+  }
+
+  .dialog-toolbar {
+    border-width: 0 0 1px 0;
+    border-color: $bs-border-color;
+  }
+
+  .dialog-button {
+    top: 0;
+    border-width: 1px 0 0 0;
+    border-color: $bs-border-color;
+  }
+}
+
+.window-proxy {
+  border: 1px dashed #bbb;
+  border-radius: $bs-border-radius;
+}

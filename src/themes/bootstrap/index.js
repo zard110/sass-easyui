@@ -30,6 +30,7 @@ import './form.scss'
 import './combo.scss'
 import './accordion.scss'
 import './menu.scss'
+import './window.scss'
 
 $.parser.auto = false;
 

@@ -29,6 +29,7 @@ import './textbox.scss'
 import './form.scss'
 import './combo.scss'
 import './accordion.scss'
+import './menu.scss'
 
 $.parser.auto = false;
 
@@ -100,6 +101,14 @@ $.parser.auto = false;
   $.extend(defaults, {
     tabHeight: 42,
     plain: true
+  });
+});
+
+[
+  $.fn.menu.defaults
+].map(function(defaults) {
+  $.extend(defaults, {
+    itemHeight: 24
   });
 });
 

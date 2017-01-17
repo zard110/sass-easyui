@@ -10,6 +10,7 @@ import './themes/bootstrap'
 import Tree from './modules/tree'
 import Treegrid from './modules/treegrid'
 import Form from './modules/form'
+import Menu from './modules/menu'
 
 angular.module('sass-easyui', [
   uiRouter,
@@ -17,7 +18,8 @@ angular.module('sass-easyui', [
 
   Tree,
   Treegrid,
-  Form
+  Form,
+  Menu
 ])
   .config(['$stateProvider', '$urlRouterProvider', uiRouterConfig])
   .controller('MainController', ['$rootScope', '$timeout', MainController]);
@@ -98,6 +100,19 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
     controller: 'TreegridController'
   };
 
+  const menuState = {
+    name: 'menu',
+    url: '/menu',
+    templateUrl: '/src/modules/menu/menu.html',
+    controller: 'MenuController'
+  };
+
+  const dialogState = {
+    name: 'dialog',
+    url: '/dialog',
+    templateUrl: '/src/modules/dialog/dialog.html'
+  };
+
   $stateProvider.state(iconState);
   $stateProvider.state(buttonState);
   $stateProvider.state(formState);
@@ -106,6 +121,8 @@ function uiRouterConfig ($stateProvider, $urlRouterProvider) {
   $stateProvider.state(datagridState);
   $stateProvider.state(treeState);
   $stateProvider.state(treegridState);
+  $stateProvider.state(menuState);
+  $stateProvider.state(dialogState);
 }
 
 
